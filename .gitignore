@@ -1,0 +1,2 @@
+#/ remove all node modules recursively
+rm -rf node_modules

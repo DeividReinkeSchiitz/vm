@@ -84,8 +84,6 @@ build lib/JSON/CMakeFiles/JSON_shared.dir/JSON.c.o: C_COMPILER__JSON_shared_Debu
   INCLUDES = -I/HD/Source/vm/lib/JSON/../../include
   OBJECT_DIR = lib/JSON/CMakeFiles/JSON_shared.dir
   OBJECT_FILE_DIR = lib/JSON/CMakeFiles/JSON_shared.dir
-  TARGET_COMPILE_PDB = lib/JSON/CMakeFiles/JSON_shared.dir/
-  TARGET_PDB = /HD/Source/vm/lib/JSON/libJSON_shared.pdb
 
 
 # =============================================================================
@@ -102,9 +100,8 @@ build /HD/Source/vm/lib/JSON/libJSON_shared.so: C_SHARED_LIBRARY_LINKER__JSON_sh
   PRE_LINK = :
   SONAME = libJSON_shared.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_COMPILE_PDB = lib/JSON/CMakeFiles/JSON_shared.dir/
   TARGET_FILE = /HD/Source/vm/lib/JSON/libJSON_shared.so
-  TARGET_PDB = /HD/Source/vm/lib/JSON/libJSON_shared.pdb
+  TARGET_PDB = JSON_shared.so.dbg
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target JSON_static
@@ -121,8 +118,6 @@ build lib/JSON/CMakeFiles/JSON_static.dir/JSON.c.o: C_COMPILER__JSON_static_Debu
   INCLUDES = -I/HD/Source/vm/lib/JSON/../../include
   OBJECT_DIR = lib/JSON/CMakeFiles/JSON_static.dir
   OBJECT_FILE_DIR = lib/JSON/CMakeFiles/JSON_static.dir
-  TARGET_COMPILE_PDB = lib/JSON/CMakeFiles/JSON_static.dir/JSON_static.pdb
-  TARGET_PDB = lib/libJSON_static.pdb
 
 
 # =============================================================================
@@ -137,9 +132,8 @@ build lib/libJSON_static.a: C_STATIC_LIBRARY_LINKER__JSON_static_Debug lib/JSON/
   OBJECT_DIR = lib/JSON/CMakeFiles/JSON_static.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = lib/JSON/CMakeFiles/JSON_static.dir/JSON_static.pdb
   TARGET_FILE = lib/libJSON_static.a
-  TARGET_PDB = lib/libJSON_static.pdb
+  TARGET_PDB = JSON_static.a.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target JSON_tests
@@ -156,8 +150,6 @@ build lib/JSON/CMakeFiles/JSON_tests.dir/tests/JSON_tests.cpp.o: CXX_COMPILER__J
   INCLUDES = -I/HD/Source/vm/lib/JSON/../../include -I/HD/Source/vm/lib/JSON/../../vendor/googletest/googletest/include
   OBJECT_DIR = lib/JSON/CMakeFiles/JSON_tests.dir
   OBJECT_FILE_DIR = lib/JSON/CMakeFiles/JSON_tests.dir/tests
-  TARGET_COMPILE_PDB = lib/JSON/CMakeFiles/JSON_tests.dir/
-  TARGET_PDB = lib/JSON/JSON_tests.pdb
 
 
 # =============================================================================
@@ -173,9 +165,8 @@ build lib/JSON/JSON_tests: CXX_EXECUTABLE_LINKER__JSON_tests_Debug lib/JSON/CMak
   OBJECT_DIR = lib/JSON/CMakeFiles/JSON_tests.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = lib/JSON/CMakeFiles/JSON_tests.dir/
   TARGET_FILE = lib/JSON/JSON_tests
-  TARGET_PDB = lib/JSON/JSON_tests.pdb
+  TARGET_PDB = JSON_tests.dbg
 
 
 #############################################
@@ -221,8 +212,6 @@ build lib/TCPServer/CMakeFiles/TCPServer_shared.dir/TCPServer.c.o: C_COMPILER__T
   INCLUDES = -I/HD/Source/vm/lib/TCPServer/../../include
   OBJECT_DIR = lib/TCPServer/CMakeFiles/TCPServer_shared.dir
   OBJECT_FILE_DIR = lib/TCPServer/CMakeFiles/TCPServer_shared.dir
-  TARGET_COMPILE_PDB = lib/TCPServer/CMakeFiles/TCPServer_shared.dir/
-  TARGET_PDB = /HD/Source/vm/lib/TCPServer/libTCPServer_shared.pdb
 
 
 # =============================================================================
@@ -239,9 +228,8 @@ build /HD/Source/vm/lib/TCPServer/libTCPServer_shared.so: C_SHARED_LIBRARY_LINKE
   PRE_LINK = :
   SONAME = libTCPServer_shared.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_COMPILE_PDB = lib/TCPServer/CMakeFiles/TCPServer_shared.dir/
   TARGET_FILE = /HD/Source/vm/lib/TCPServer/libTCPServer_shared.so
-  TARGET_PDB = /HD/Source/vm/lib/TCPServer/libTCPServer_shared.pdb
+  TARGET_PDB = TCPServer_shared.so.dbg
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target TCPServer_static
@@ -258,8 +246,6 @@ build lib/TCPServer/CMakeFiles/TCPServer_static.dir/TCPServer.c.o: C_COMPILER__T
   INCLUDES = -I/HD/Source/vm/lib/TCPServer/../../include
   OBJECT_DIR = lib/TCPServer/CMakeFiles/TCPServer_static.dir
   OBJECT_FILE_DIR = lib/TCPServer/CMakeFiles/TCPServer_static.dir
-  TARGET_COMPILE_PDB = lib/TCPServer/CMakeFiles/TCPServer_static.dir/TCPServer_static.pdb
-  TARGET_PDB = lib/libTCPServer_static.pdb
 
 
 # =============================================================================
@@ -274,9 +260,8 @@ build lib/libTCPServer_static.a: C_STATIC_LIBRARY_LINKER__TCPServer_static_Debug
   OBJECT_DIR = lib/TCPServer/CMakeFiles/TCPServer_static.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = lib/TCPServer/CMakeFiles/TCPServer_static.dir/TCPServer_static.pdb
   TARGET_FILE = lib/libTCPServer_static.a
-  TARGET_PDB = lib/libTCPServer_static.pdb
+  TARGET_PDB = TCPServer_static.a.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target TCPServer_tests
@@ -293,8 +278,6 @@ build lib/TCPServer/CMakeFiles/TCPServer_tests.dir/tests/TCPServer_tests.cpp.o: 
   INCLUDES = -I/HD/Source/vm/lib/TCPServer/../../include -I/HD/Source/vm/lib/TCPServer/../../vendor/googletest/googletest/include
   OBJECT_DIR = lib/TCPServer/CMakeFiles/TCPServer_tests.dir
   OBJECT_FILE_DIR = lib/TCPServer/CMakeFiles/TCPServer_tests.dir/tests
-  TARGET_COMPILE_PDB = lib/TCPServer/CMakeFiles/TCPServer_tests.dir/
-  TARGET_PDB = lib/TCPServer/TCPServer_tests.pdb
 
 
 # =============================================================================
@@ -310,9 +293,8 @@ build lib/TCPServer/TCPServer_tests: CXX_EXECUTABLE_LINKER__TCPServer_tests_Debu
   OBJECT_DIR = lib/TCPServer/CMakeFiles/TCPServer_tests.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = lib/TCPServer/CMakeFiles/TCPServer_tests.dir/
   TARGET_FILE = lib/TCPServer/TCPServer_tests
-  TARGET_PDB = lib/TCPServer/TCPServer_tests.pdb
+  TARGET_PDB = TCPServer_tests.dbg
 
 
 #############################################
@@ -358,8 +340,6 @@ build lib/d_structs/CMakeFiles/d_structs_shared.dir/d_structs.c.o: C_COMPILER__d
   INCLUDES = -I/HD/Source/vm/lib/d_structs/../../include
   OBJECT_DIR = lib/d_structs/CMakeFiles/d_structs_shared.dir
   OBJECT_FILE_DIR = lib/d_structs/CMakeFiles/d_structs_shared.dir
-  TARGET_COMPILE_PDB = lib/d_structs/CMakeFiles/d_structs_shared.dir/
-  TARGET_PDB = /HD/Source/vm/lib/d_structs/libd_structs_shared.pdb
 
 
 # =============================================================================
@@ -376,9 +356,8 @@ build /HD/Source/vm/lib/d_structs/libd_structs_shared.so: C_SHARED_LIBRARY_LINKE
   PRE_LINK = :
   SONAME = libd_structs_shared.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_COMPILE_PDB = lib/d_structs/CMakeFiles/d_structs_shared.dir/
   TARGET_FILE = /HD/Source/vm/lib/d_structs/libd_structs_shared.so
-  TARGET_PDB = /HD/Source/vm/lib/d_structs/libd_structs_shared.pdb
+  TARGET_PDB = d_structs_shared.so.dbg
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target d_structs_static
@@ -395,8 +374,6 @@ build lib/d_structs/CMakeFiles/d_structs_static.dir/d_structs.c.o: C_COMPILER__d
   INCLUDES = -I/HD/Source/vm/lib/d_structs/../../include
   OBJECT_DIR = lib/d_structs/CMakeFiles/d_structs_static.dir
   OBJECT_FILE_DIR = lib/d_structs/CMakeFiles/d_structs_static.dir
-  TARGET_COMPILE_PDB = lib/d_structs/CMakeFiles/d_structs_static.dir/d_structs_static.pdb
-  TARGET_PDB = lib/libd_structs_static.pdb
 
 
 # =============================================================================
@@ -411,9 +388,8 @@ build lib/libd_structs_static.a: C_STATIC_LIBRARY_LINKER__d_structs_static_Debug
   OBJECT_DIR = lib/d_structs/CMakeFiles/d_structs_static.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = lib/d_structs/CMakeFiles/d_structs_static.dir/d_structs_static.pdb
   TARGET_FILE = lib/libd_structs_static.a
-  TARGET_PDB = lib/libd_structs_static.pdb
+  TARGET_PDB = d_structs_static.a.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target d_structs_tests
@@ -430,8 +406,6 @@ build lib/d_structs/CMakeFiles/d_structs_tests.dir/tests/d_structs_tests.cpp.o: 
   INCLUDES = -I/HD/Source/vm/lib/d_structs/../../include -I/HD/Source/vm/lib/d_structs/../../vendor/googletest/googletest/include
   OBJECT_DIR = lib/d_structs/CMakeFiles/d_structs_tests.dir
   OBJECT_FILE_DIR = lib/d_structs/CMakeFiles/d_structs_tests.dir/tests
-  TARGET_COMPILE_PDB = lib/d_structs/CMakeFiles/d_structs_tests.dir/
-  TARGET_PDB = lib/d_structs/d_structs_tests.pdb
 
 
 # =============================================================================
@@ -447,9 +421,8 @@ build lib/d_structs/d_structs_tests: CXX_EXECUTABLE_LINKER__d_structs_tests_Debu
   OBJECT_DIR = lib/d_structs/CMakeFiles/d_structs_tests.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = lib/d_structs/CMakeFiles/d_structs_tests.dir/
   TARGET_FILE = lib/d_structs/d_structs_tests
-  TARGET_PDB = lib/d_structs/d_structs_tests.pdb
+  TARGET_PDB = d_structs_tests.dbg
 
 
 #############################################
@@ -495,8 +468,6 @@ build lib/hmac/CMakeFiles/hmac_shared.dir/hmac.c.o: C_COMPILER__hmac_shared_Debu
   INCLUDES = -I/HD/Source/vm/lib/hmac/../../include
   OBJECT_DIR = lib/hmac/CMakeFiles/hmac_shared.dir
   OBJECT_FILE_DIR = lib/hmac/CMakeFiles/hmac_shared.dir
-  TARGET_COMPILE_PDB = lib/hmac/CMakeFiles/hmac_shared.dir/
-  TARGET_PDB = /HD/Source/vm/lib/hmac/libhmac_shared.pdb
 
 
 # =============================================================================
@@ -514,9 +485,8 @@ build /HD/Source/vm/lib/hmac/libhmac_shared.so: C_SHARED_LIBRARY_LINKER__hmac_sh
   PRE_LINK = :
   SONAME = libhmac_shared.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_COMPILE_PDB = lib/hmac/CMakeFiles/hmac_shared.dir/
   TARGET_FILE = /HD/Source/vm/lib/hmac/libhmac_shared.so
-  TARGET_PDB = /HD/Source/vm/lib/hmac/libhmac_shared.pdb
+  TARGET_PDB = hmac_shared.so.dbg
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target hmac_static
@@ -533,8 +503,6 @@ build lib/hmac/CMakeFiles/hmac_static.dir/hmac.c.o: C_COMPILER__hmac_static_Debu
   INCLUDES = -I/HD/Source/vm/lib/hmac/../../include
   OBJECT_DIR = lib/hmac/CMakeFiles/hmac_static.dir
   OBJECT_FILE_DIR = lib/hmac/CMakeFiles/hmac_static.dir
-  TARGET_COMPILE_PDB = lib/hmac/CMakeFiles/hmac_static.dir/hmac_static.pdb
-  TARGET_PDB = lib/libhmac_static.pdb
 
 
 # =============================================================================
@@ -549,9 +517,8 @@ build lib/libhmac_static.a: C_STATIC_LIBRARY_LINKER__hmac_static_Debug lib/hmac/
   OBJECT_DIR = lib/hmac/CMakeFiles/hmac_static.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = lib/hmac/CMakeFiles/hmac_static.dir/hmac_static.pdb
   TARGET_FILE = lib/libhmac_static.a
-  TARGET_PDB = lib/libhmac_static.pdb
+  TARGET_PDB = hmac_static.a.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target hmac_tests
@@ -568,8 +535,6 @@ build lib/hmac/CMakeFiles/hmac_tests.dir/tests/hmac_tests.cpp.o: CXX_COMPILER__h
   INCLUDES = -I/HD/Source/vm/lib/hmac/../../include -I/HD/Source/vm/lib/hmac/../../vendor/googletest/googletest/include
   OBJECT_DIR = lib/hmac/CMakeFiles/hmac_tests.dir
   OBJECT_FILE_DIR = lib/hmac/CMakeFiles/hmac_tests.dir/tests
-  TARGET_COMPILE_PDB = lib/hmac/CMakeFiles/hmac_tests.dir/
-  TARGET_PDB = lib/hmac/hmac_tests.pdb
 
 
 # =============================================================================
@@ -585,9 +550,8 @@ build lib/hmac/hmac_tests: CXX_EXECUTABLE_LINKER__hmac_tests_Debug lib/hmac/CMak
   OBJECT_DIR = lib/hmac/CMakeFiles/hmac_tests.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = lib/hmac/CMakeFiles/hmac_tests.dir/
   TARGET_FILE = lib/hmac/hmac_tests
-  TARGET_PDB = lib/hmac/hmac_tests.pdb
+  TARGET_PDB = hmac_tests.dbg
 
 
 #############################################
@@ -633,8 +597,6 @@ build lib/log/CMakeFiles/log_shared.dir/log.c.o: C_COMPILER__log_shared_Debug /H
   INCLUDES = -I/HD/Source/vm/lib/log/../../include
   OBJECT_DIR = lib/log/CMakeFiles/log_shared.dir
   OBJECT_FILE_DIR = lib/log/CMakeFiles/log_shared.dir
-  TARGET_COMPILE_PDB = lib/log/CMakeFiles/log_shared.dir/
-  TARGET_PDB = /HD/Source/vm/lib/log/liblog_shared.pdb
 
 
 # =============================================================================
@@ -651,9 +613,8 @@ build /HD/Source/vm/lib/log/liblog_shared.so: C_SHARED_LIBRARY_LINKER__log_share
   PRE_LINK = :
   SONAME = liblog_shared.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_COMPILE_PDB = lib/log/CMakeFiles/log_shared.dir/
   TARGET_FILE = /HD/Source/vm/lib/log/liblog_shared.so
-  TARGET_PDB = /HD/Source/vm/lib/log/liblog_shared.pdb
+  TARGET_PDB = log_shared.so.dbg
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target log_static
@@ -670,8 +631,6 @@ build lib/log/CMakeFiles/log_static.dir/log.c.o: C_COMPILER__log_static_Debug /H
   INCLUDES = -I/HD/Source/vm/lib/log/../../include
   OBJECT_DIR = lib/log/CMakeFiles/log_static.dir
   OBJECT_FILE_DIR = lib/log/CMakeFiles/log_static.dir
-  TARGET_COMPILE_PDB = lib/log/CMakeFiles/log_static.dir/log_static.pdb
-  TARGET_PDB = lib/liblog_static.pdb
 
 
 # =============================================================================
@@ -686,9 +645,8 @@ build lib/liblog_static.a: C_STATIC_LIBRARY_LINKER__log_static_Debug lib/log/CMa
   OBJECT_DIR = lib/log/CMakeFiles/log_static.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = lib/log/CMakeFiles/log_static.dir/log_static.pdb
   TARGET_FILE = lib/liblog_static.a
-  TARGET_PDB = lib/liblog_static.pdb
+  TARGET_PDB = log_static.a.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target log_tests
@@ -705,8 +663,6 @@ build lib/log/CMakeFiles/log_tests.dir/tests/log_tests.cpp.o: CXX_COMPILER__log_
   INCLUDES = -I/HD/Source/vm/lib/log/../../include -I/HD/Source/vm/lib/log/../../vendor/googletest/googletest/include
   OBJECT_DIR = lib/log/CMakeFiles/log_tests.dir
   OBJECT_FILE_DIR = lib/log/CMakeFiles/log_tests.dir/tests
-  TARGET_COMPILE_PDB = lib/log/CMakeFiles/log_tests.dir/
-  TARGET_PDB = lib/log/log_tests.pdb
 
 
 # =============================================================================
@@ -722,9 +678,8 @@ build lib/log/log_tests: CXX_EXECUTABLE_LINKER__log_tests_Debug lib/log/CMakeFil
   OBJECT_DIR = lib/log/CMakeFiles/log_tests.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = lib/log/CMakeFiles/log_tests.dir/
   TARGET_FILE = lib/log/log_tests
-  TARGET_PDB = lib/log/log_tests.pdb
+  TARGET_PDB = log_tests.dbg
 
 
 #############################################
@@ -770,8 +725,6 @@ build lib/rwe/CMakeFiles/rwe_shared.dir/rwe.c.o: C_COMPILER__rwe_shared_Debug /H
   INCLUDES = -I/HD/Source/vm/lib/rwe/../../include
   OBJECT_DIR = lib/rwe/CMakeFiles/rwe_shared.dir
   OBJECT_FILE_DIR = lib/rwe/CMakeFiles/rwe_shared.dir
-  TARGET_COMPILE_PDB = lib/rwe/CMakeFiles/rwe_shared.dir/
-  TARGET_PDB = /HD/Source/vm/lib/rwe/librwe_shared.pdb
 
 
 # =============================================================================
@@ -788,9 +741,8 @@ build /HD/Source/vm/lib/rwe/librwe_shared.so: C_SHARED_LIBRARY_LINKER__rwe_share
   PRE_LINK = :
   SONAME = librwe_shared.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_COMPILE_PDB = lib/rwe/CMakeFiles/rwe_shared.dir/
   TARGET_FILE = /HD/Source/vm/lib/rwe/librwe_shared.so
-  TARGET_PDB = /HD/Source/vm/lib/rwe/librwe_shared.pdb
+  TARGET_PDB = rwe_shared.so.dbg
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target rwe_static
@@ -807,8 +759,6 @@ build lib/rwe/CMakeFiles/rwe_static.dir/rwe.c.o: C_COMPILER__rwe_static_Debug /H
   INCLUDES = -I/HD/Source/vm/lib/rwe/../../include
   OBJECT_DIR = lib/rwe/CMakeFiles/rwe_static.dir
   OBJECT_FILE_DIR = lib/rwe/CMakeFiles/rwe_static.dir
-  TARGET_COMPILE_PDB = lib/rwe/CMakeFiles/rwe_static.dir/rwe_static.pdb
-  TARGET_PDB = lib/librwe_static.pdb
 
 
 # =============================================================================
@@ -823,9 +773,8 @@ build lib/librwe_static.a: C_STATIC_LIBRARY_LINKER__rwe_static_Debug lib/rwe/CMa
   OBJECT_DIR = lib/rwe/CMakeFiles/rwe_static.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = lib/rwe/CMakeFiles/rwe_static.dir/rwe_static.pdb
   TARGET_FILE = lib/librwe_static.a
-  TARGET_PDB = lib/librwe_static.pdb
+  TARGET_PDB = rwe_static.a.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target rwe_tests
@@ -842,8 +791,6 @@ build lib/rwe/CMakeFiles/rwe_tests.dir/tests/rwe_tests.cpp.o: CXX_COMPILER__rwe_
   INCLUDES = -I/HD/Source/vm/lib/rwe/../../include -I/HD/Source/vm/lib/rwe/../../vendor/googletest/googletest/include
   OBJECT_DIR = lib/rwe/CMakeFiles/rwe_tests.dir
   OBJECT_FILE_DIR = lib/rwe/CMakeFiles/rwe_tests.dir/tests
-  TARGET_COMPILE_PDB = lib/rwe/CMakeFiles/rwe_tests.dir/
-  TARGET_PDB = lib/rwe/rwe_tests.pdb
 
 
 # =============================================================================
@@ -859,9 +806,8 @@ build lib/rwe/rwe_tests: CXX_EXECUTABLE_LINKER__rwe_tests_Debug lib/rwe/CMakeFil
   OBJECT_DIR = lib/rwe/CMakeFiles/rwe_tests.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = lib/rwe/CMakeFiles/rwe_tests.dir/
   TARGET_FILE = lib/rwe/rwe_tests
-  TARGET_PDB = lib/rwe/rwe_tests.pdb
+  TARGET_PDB = rwe_tests.dbg
 
 
 #############################################
@@ -905,16 +851,12 @@ build gitHub_webhook/CMakeFiles/gitHub_webhook.dir/gitHub_webhook.c.o: C_COMPILE
   FLAGS = -g -fdiagnostics-color=always -std=gnu2x
   OBJECT_DIR = gitHub_webhook/CMakeFiles/gitHub_webhook.dir
   OBJECT_FILE_DIR = gitHub_webhook/CMakeFiles/gitHub_webhook.dir
-  TARGET_COMPILE_PDB = gitHub_webhook/CMakeFiles/gitHub_webhook.dir/
-  TARGET_PDB = /HD/Source/vm/gitHub_webhook/bin/gitHub_webhook.pdb
 
 build gitHub_webhook/CMakeFiles/gitHub_webhook.dir/src/TCPServer_gitHub.c.o: C_COMPILER__gitHub_webhook_Debug /HD/Source/vm/gitHub_webhook/src/TCPServer_gitHub.c || cmake_object_order_depends_target_gitHub_webhook
   DEP_FILE = gitHub_webhook/CMakeFiles/gitHub_webhook.dir/src/TCPServer_gitHub.c.o.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu2x
   OBJECT_DIR = gitHub_webhook/CMakeFiles/gitHub_webhook.dir
   OBJECT_FILE_DIR = gitHub_webhook/CMakeFiles/gitHub_webhook.dir/src
-  TARGET_COMPILE_PDB = gitHub_webhook/CMakeFiles/gitHub_webhook.dir/
-  TARGET_PDB = /HD/Source/vm/gitHub_webhook/bin/gitHub_webhook.pdb
 
 
 # =============================================================================
@@ -930,9 +872,8 @@ build /HD/Source/vm/gitHub_webhook/bin/gitHub_webhook: C_EXECUTABLE_LINKER__gitH
   OBJECT_DIR = gitHub_webhook/CMakeFiles/gitHub_webhook.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = gitHub_webhook/CMakeFiles/gitHub_webhook.dir/
   TARGET_FILE = /HD/Source/vm/gitHub_webhook/bin/gitHub_webhook
-  TARGET_PDB = /HD/Source/vm/gitHub_webhook/bin/gitHub_webhook.pdb
+  TARGET_PDB = gitHub_webhook.dbg
 
 
 #############################################
@@ -1088,14 +1029,14 @@ build lib/rwe/all: phony /HD/Source/vm/lib/rwe/librwe_shared.so lib/librwe_stati
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /HD/Source/vm/CMakeLists.txt /HD/Source/vm/gitHub_webhook/CMakeLists.txt /HD/Source/vm/lib/JSON/CMakeLists.txt /HD/Source/vm/lib/TCPServer/CMakeLists.txt /HD/Source/vm/lib/d_structs/CMakeLists.txt /HD/Source/vm/lib/defaults.cmake /HD/Source/vm/lib/hmac/CMakeLists.txt /HD/Source/vm/lib/log/CMakeLists.txt /HD/Source/vm/lib/rwe/CMakeLists.txt /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCCompiler.cmake.in /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCCompilerABI.c /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXCompiler.cmake.in /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCompilerIdDetection.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDetermineCCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDetermineCXXCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDetermineCompileFeatures.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDetermineCompilerABI.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDetermineCompilerId.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDetermineSystem.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeFindBinUtils.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeParseImplicitIncludeInfo.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeParseImplicitLinkInfo.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeParseLibraryArchitecture.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystem.cmake.in /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeTestCCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeTestCXXCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeTestCompilerCommon.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/ADSP-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/ARMCC-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/ARMClang-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/AppleClang-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Borland-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Clang-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Cray-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GHS-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-FindBinUtils.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/HP-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/IAR-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Intel-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/LCC-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/MSVC-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/NVHPC-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/PGI-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/PathScale-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/SCO-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/TI-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Tasking-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Watcom-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/XL-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/zOS-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindOpenSSL.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageMessage.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPkgConfig.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Internal/FeatureTesting.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-Determine-CXX.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /HD/Source/vm/CMakeLists.txt /HD/Source/vm/gitHub_webhook/CMakeLists.txt /HD/Source/vm/lib/JSON/CMakeLists.txt /HD/Source/vm/lib/TCPServer/CMakeLists.txt /HD/Source/vm/lib/d_structs/CMakeLists.txt /HD/Source/vm/lib/defaults.cmake /HD/Source/vm/lib/hmac/CMakeLists.txt /HD/Source/vm/lib/log/CMakeLists.txt /HD/Source/vm/lib/rwe/CMakeLists.txt /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindOpenSSL.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageMessage.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPkgConfig.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /HD/Source/vm/CMakeLists.txt /HD/Source/vm/gitHub_webhook/CMakeLists.txt /HD/Source/vm/lib/JSON/CMakeLists.txt /HD/Source/vm/lib/TCPServer/CMakeLists.txt /HD/Source/vm/lib/d_structs/CMakeLists.txt /HD/Source/vm/lib/defaults.cmake /HD/Source/vm/lib/hmac/CMakeLists.txt /HD/Source/vm/lib/log/CMakeLists.txt /HD/Source/vm/lib/rwe/CMakeLists.txt /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCCompiler.cmake.in /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCCompilerABI.c /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXCompiler.cmake.in /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCompilerIdDetection.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDetermineCCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDetermineCXXCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDetermineCompileFeatures.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDetermineCompilerABI.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDetermineCompilerId.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeDetermineSystem.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeFindBinUtils.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeParseImplicitIncludeInfo.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeParseImplicitLinkInfo.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeParseLibraryArchitecture.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystem.cmake.in /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeTestCCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeTestCXXCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeTestCompilerCommon.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/ADSP-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/ARMCC-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/ARMClang-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/AppleClang-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Borland-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Clang-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Cray-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GHS-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-FindBinUtils.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/HP-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/IAR-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Intel-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/LCC-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/MSVC-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/NVHPC-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/PGI-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/PathScale-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/SCO-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/TI-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Tasking-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/Watcom-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/XL-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/zOS-C-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindOpenSSL.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageMessage.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPkgConfig.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Internal/FeatureTesting.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-Determine-CXX.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
+build /HD/Source/vm/CMakeLists.txt /HD/Source/vm/gitHub_webhook/CMakeLists.txt /HD/Source/vm/lib/JSON/CMakeLists.txt /HD/Source/vm/lib/TCPServer/CMakeLists.txt /HD/Source/vm/lib/d_structs/CMakeLists.txt /HD/Source/vm/lib/defaults.cmake /HD/Source/vm/lib/hmac/CMakeLists.txt /HD/Source/vm/lib/log/CMakeLists.txt /HD/Source/vm/lib/rwe/CMakeLists.txt /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCInformation.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Compiler/GNU.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindOpenSSL.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPackageMessage.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/FindPkgConfig.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/Linux.cmake /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.25.2/CMakeCCompiler.cmake CMakeFiles/3.25.2/CMakeCXXCompiler.cmake CMakeFiles/3.25.2/CMakeSystem.cmake: phony
 
 
 #############################################

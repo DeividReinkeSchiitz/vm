@@ -1,18 +1,6 @@
 /home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/deivid/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/ninja/linux/x64/ninja -G Ninja -S /HD/Source/vm -B /HD/Source/vm/build
--- The C compiler identification is GNU 12.2.1
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
 -- Starting to build libraries...
 -- JSON: 
--- The CXX compiler identification is GNU 12.2.1
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 --   - static library: JSON_static
 --   - shared library: JSON_shared
 -- TCPServer: 
@@ -22,7 +10,6 @@
 --   - static library: d_structs_static
 --   - shared library: d_structs_shared
 -- hmac: 
--- Found OpenSSL: /usr/lib64/libcrypto.so (found version "3.0.8")  
 --   - static library: hmac_static
 --   - shared library: hmac_shared
 -- log: 
