@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="rwe"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\JSON\;CMake Files\lib\TCPServer\;CMake Files\lib\d_structs\;CMake Files\lib\hmac\;CMake Files\lib\log\;CMake Files\lib\log\tests\;CMake Files\lib\rwe\;CMake Files\github_webhook\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/HD/Source/vm/build/lib/rwe"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/HD/Source/vm/build/lib/rwe/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/HD/Source/vm/build/lib/rwe/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/HD/Source/vm/build/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/HD/Source/vm/build/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rwe">
+				<Option output="/HD/Source/vm/lib/rwe/librwe.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/HD/Source/vm/build/lib/rwe"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/HD/Source/vm/lib/rwe/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/HD/Source/vm/build/lib/rwe/Makefile&quot;  VERBOSE=1 rwe"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/HD/Source/vm/build/lib/rwe/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/HD/Source/vm/build/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/HD/Source/vm/build/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rwe/fast">
+				<Option output="/HD/Source/vm/lib/rwe/librwe.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/HD/Source/vm/build/lib/rwe"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/HD/Source/vm/lib/rwe/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/12/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/HD/Source/vm/build/lib/rwe/Makefile&quot;  VERBOSE=1 rwe/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/HD/Source/vm/build/lib/rwe/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/HD/Source/vm/build/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/HD/Source/vm/build/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/HD/Source/vm/include/rwe.h">
+			<Option target="rwe"/>
+		</Unit>
+		<Unit filename="/HD/Source/vm/lib/rwe/rwe.c">
+			<Option target="rwe"/>
+		</Unit>
+		<Unit filename="/HD/Source/vm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/HD/Source/vm/lib/JSON/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\JSON\"/>
+		</Unit>
+		<Unit filename="/HD/Source/vm/lib/TCPServer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\TCPServer\"/>
+		</Unit>
+		<Unit filename="/HD/Source/vm/lib/d_structs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\d_structs\"/>
+		</Unit>
+		<Unit filename="/HD/Source/vm/lib/hmac/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\hmac\"/>
+		</Unit>
+		<Unit filename="/HD/Source/vm/lib/log/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\log\"/>
+		</Unit>
+		<Unit filename="/HD/Source/vm/lib/log/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\log\tests\"/>
+		</Unit>
+		<Unit filename="/HD/Source/vm/lib/rwe/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\rwe\"/>
+		</Unit>
+		<Unit filename="/HD/Source/vm/github_webhook/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\github_webhook\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

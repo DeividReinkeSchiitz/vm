@@ -1,0 +1,2 @@
+/usr/bin/ar qc /HD/Source/vm/lib/hmac/libhmac_static.a CMakeFiles/hmac_static.dir/hmac.c.o
+/usr/bin/ranlib /HD/Source/vm/lib/hmac/libhmac_static.a

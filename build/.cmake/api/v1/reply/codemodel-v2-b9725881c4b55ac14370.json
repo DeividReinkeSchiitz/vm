@@ -1,0 +1,411 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "lib/JSON",
+					"jsonFile" : "directory-lib.JSON-Debug-563f6c2af6375ca079f2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "lib/JSON",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"build" : "lib/TCPServer",
+					"jsonFile" : "directory-lib.TCPServer-Debug-da0dbc495bd3473a7cec.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "lib/TCPServer",
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"build" : "lib/d_structs",
+					"jsonFile" : "directory-lib.d_structs-Debug-f5b566d1ee0ae5c7b050.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "lib/d_structs",
+					"targetIndexes" : 
+					[
+						6,
+						7,
+						8
+					]
+				},
+				{
+					"build" : "lib/hmac",
+					"jsonFile" : "directory-lib.hmac-Debug-2e9e3dc4e895e615c223.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "lib/hmac",
+					"targetIndexes" : 
+					[
+						10,
+						11,
+						12
+					]
+				},
+				{
+					"build" : "lib/log",
+					"jsonFile" : "directory-lib.log-Debug-0f0ec8371763ab372612.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "lib/log",
+					"targetIndexes" : 
+					[
+						13,
+						14,
+						15
+					]
+				},
+				{
+					"build" : "lib/rwe",
+					"jsonFile" : "directory-lib.rwe-Debug-246efc7166fb90d4ada5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "lib/rwe",
+					"targetIndexes" : 
+					[
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "gitHub_webhook",
+					"jsonFile" : "directory-gitHub_webhook-Debug-f83e91e0b941f0cc45ae.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 7,
+					"source" : "gitHub_webhook",
+					"targetIndexes" : 
+					[
+						9
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "vm"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "JSON",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "TCPServer",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						4,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "d_structs",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						6,
+						7,
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "hmac",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						10,
+						11,
+						12
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "log",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						13,
+						14,
+						15
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "rwe",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "gitHub_webhook",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "JSON_shared::@922786e904883d2afdee",
+					"jsonFile" : "target-JSON_shared-Debug-a5e4933a0521359f0df6.json",
+					"name" : "JSON_shared",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "JSON_static::@922786e904883d2afdee",
+					"jsonFile" : "target-JSON_static-Debug-1c8d32790d9c7fcf2b27.json",
+					"name" : "JSON_static",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "JSON_tests::@922786e904883d2afdee",
+					"jsonFile" : "target-JSON_tests-Debug-fae99c17cbbc616e1ad5.json",
+					"name" : "JSON_tests",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "TCPServer_shared::@105a1874dc6afb28f556",
+					"jsonFile" : "target-TCPServer_shared-Debug-28218c1f88427a497880.json",
+					"name" : "TCPServer_shared",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "TCPServer_static::@105a1874dc6afb28f556",
+					"jsonFile" : "target-TCPServer_static-Debug-94cc19d10fcebad84e8f.json",
+					"name" : "TCPServer_static",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "TCPServer_tests::@105a1874dc6afb28f556",
+					"jsonFile" : "target-TCPServer_tests-Debug-1e4e6efcc91db9ea305a.json",
+					"name" : "TCPServer_tests",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "d_structs_shared::@8870822809e394c598c5",
+					"jsonFile" : "target-d_structs_shared-Debug-cec00f103533b2faa8b2.json",
+					"name" : "d_structs_shared",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "d_structs_static::@8870822809e394c598c5",
+					"jsonFile" : "target-d_structs_static-Debug-74ff75f5a48baa30d603.json",
+					"name" : "d_structs_static",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "d_structs_tests::@8870822809e394c598c5",
+					"jsonFile" : "target-d_structs_tests-Debug-ca43ea692fec0b87b8db.json",
+					"name" : "d_structs_tests",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "gitHub_webhook::@d32ea026b41fe0f92b5c",
+					"jsonFile" : "target-gitHub_webhook-Debug-d0d18876920a69b71d69.json",
+					"name" : "gitHub_webhook",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "hmac_shared::@f3d014e8ddca023635d9",
+					"jsonFile" : "target-hmac_shared-Debug-d81e23de8a1f3777e7f1.json",
+					"name" : "hmac_shared",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "hmac_static::@f3d014e8ddca023635d9",
+					"jsonFile" : "target-hmac_static-Debug-1adc0479550ebfbb4928.json",
+					"name" : "hmac_static",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "hmac_tests::@f3d014e8ddca023635d9",
+					"jsonFile" : "target-hmac_tests-Debug-3dac21d74459980608fa.json",
+					"name" : "hmac_tests",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "log_shared::@6dc7a5903acb778d33c4",
+					"jsonFile" : "target-log_shared-Debug-6f5268611738c95330b1.json",
+					"name" : "log_shared",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "log_static::@6dc7a5903acb778d33c4",
+					"jsonFile" : "target-log_static-Debug-8f6dc7967e47bb47b8bc.json",
+					"name" : "log_static",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "log_tests::@6dc7a5903acb778d33c4",
+					"jsonFile" : "target-log_tests-Debug-a4513e4cf43cb9e204d9.json",
+					"name" : "log_tests",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "rwe_shared::@f444c2c6ad1ebcba1f82",
+					"jsonFile" : "target-rwe_shared-Debug-1d68b621d8c0b393c879.json",
+					"name" : "rwe_shared",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "rwe_static::@f444c2c6ad1ebcba1f82",
+					"jsonFile" : "target-rwe_static-Debug-ca5aa4beb5389691b7f7.json",
+					"name" : "rwe_static",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "rwe_tests::@f444c2c6ad1ebcba1f82",
+					"jsonFile" : "target-rwe_tests-Debug-d72f4a80c9ad1bc70918.json",
+					"name" : "rwe_tests",
+					"projectIndex" : 6
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/HD/Source/vm/build",
+		"source" : "/HD/Source/vm"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

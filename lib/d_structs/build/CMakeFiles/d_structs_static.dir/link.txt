@@ -1,0 +1,2 @@
+/usr/bin/ar qc /HD/Source/vm/lib/d_structs/libd_structs_static.a CMakeFiles/d_structs_static.dir/d_structs.c.o
+/usr/bin/ranlib /HD/Source/vm/lib/d_structs/libd_structs_static.a

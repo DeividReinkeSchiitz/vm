@@ -1,0 +1,13 @@
+## CMAKE
+cmake --build cmake-build-debug/ --target Default -j 6
+cmake ../
+make -j 6
+
+## CLANG-FORMAT
+clang-format -i -style=file src/*.c src/*/*.c src/*/*.h main.c
+
+## RUN
+cmake-build-debug/Default
+
+## Valgrind
+valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./Default

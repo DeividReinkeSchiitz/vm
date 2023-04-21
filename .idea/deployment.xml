@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="aws_vm">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$/" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/lib/log/build/" />
+            <excludedPath local="true" path="$PROJECT_DIR$/lib/JSON/build/" />
+            <excludedPath local="true" path="$PROJECT_DIR$/lib/rwe/build/" />
+            <excludedPath local="true" path="$PROJECT_DIR$/lib/d_structs/build/" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

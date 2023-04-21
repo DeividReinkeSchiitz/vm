@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b8ce3db8-e7c3-44ac-ad9c-bcee308c7abf" name="aws_vm">
+        <fileTransfer rootFolder="/root/src/" accessType="SFTP" host="15.228.49.102" port="22" sshConfigId="c26dfed2-5157-4b54-857f-d22f9f8c3994" sshConfig="root@15.228.49.102:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,libd_structs_shared.so -o /HD/Source/vm/lib/d_structs/libd_structs_shared.so CMakeFiles/d_structs_shared.dir/d_structs.c.o 

@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,libhmac_shared.so -o /HD/Source/vm/lib/hmac/libhmac_shared.so CMakeFiles/hmac_shared.dir/hmac.c.o 

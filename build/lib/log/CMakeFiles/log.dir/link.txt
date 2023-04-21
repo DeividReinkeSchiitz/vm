@@ -1,0 +1,2 @@
+/usr/bin/ar qc /HD/Source/vm/lib/log/liblog.a CMakeFiles/log.dir/log.c.o
+/usr/bin/ranlib /HD/Source/vm/lib/log/liblog.a

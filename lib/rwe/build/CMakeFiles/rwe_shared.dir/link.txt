@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -shared -Wl,-soname,librwe_shared.so -o /HD/Source/vm/lib/rwe/librwe_shared.so CMakeFiles/rwe_shared.dir/rwe.c.o 
