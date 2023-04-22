@@ -1,5 +1,0 @@
-/HD/Source/vm/lib/log/build/CMakeFiles/log_shared.dir
-/HD/Source/vm/lib/log/build/CMakeFiles/log_static.dir
-/HD/Source/vm/lib/log/build/CMakeFiles/log_tests.dir
-/HD/Source/vm/lib/log/build/CMakeFiles/edit_cache.dir
-/HD/Source/vm/lib/log/build/CMakeFiles/rebuild_cache.dir

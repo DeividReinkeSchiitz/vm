@@ -1,3 +1,0 @@
-/HD/Source/vm/gitHub_webhook/build/CMakeFiles/gitHub_webhook.dir
-/HD/Source/vm/gitHub_webhook/build/CMakeFiles/edit_cache.dir
-/HD/Source/vm/gitHub_webhook/build/CMakeFiles/rebuild_cache.dir

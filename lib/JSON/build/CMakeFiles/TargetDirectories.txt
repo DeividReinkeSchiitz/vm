@@ -1,4 +1,0 @@
-/HD/Source/vm/lib/JSON/build/CMakeFiles/JSON_shared.dir
-/HD/Source/vm/lib/JSON/build/CMakeFiles/JSON_static.dir
-/HD/Source/vm/lib/JSON/build/CMakeFiles/edit_cache.dir
-/HD/Source/vm/lib/JSON/build/CMakeFiles/rebuild_cache.dir

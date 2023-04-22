@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC -g -shared -Wl,-soname,libhmac.so -o /HD/Source/vm/lib/hmac/libhmac.so CMakeFiles/hmac.dir/hmac.c.o  /usr/lib64/libssl.so /usr/lib64/libcrypto.so 

@@ -1,2 +1,0 @@
-/usr/bin/ar qc /HD/Source/vm/lib/TCPServer/libTCPserver.a CMakeFiles/TCPserver.dir/TCPServer.c.o
-/usr/bin/ranlib /HD/Source/vm/lib/TCPServer/libTCPserver.a

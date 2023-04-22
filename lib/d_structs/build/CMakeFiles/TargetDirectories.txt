@@ -1,4 +1,0 @@
-/HD/Source/vm/lib/d_structs/build/CMakeFiles/d_structs_shared.dir
-/HD/Source/vm/lib/d_structs/build/CMakeFiles/d_structs_static.dir
-/HD/Source/vm/lib/d_structs/build/CMakeFiles/edit_cache.dir
-/HD/Source/vm/lib/d_structs/build/CMakeFiles/rebuild_cache.dir

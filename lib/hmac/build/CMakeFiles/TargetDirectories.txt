@@ -1,4 +1,0 @@
-/HD/Source/vm/lib/hmac/build/CMakeFiles/hmac_shared.dir
-/HD/Source/vm/lib/hmac/build/CMakeFiles/hmac_static.dir
-/HD/Source/vm/lib/hmac/build/CMakeFiles/edit_cache.dir
-/HD/Source/vm/lib/hmac/build/CMakeFiles/rebuild_cache.dir

@@ -1,4 +1,0 @@
-/HD/Source/vm/lib/TCPServer/build/CMakeFiles/TCPServer_shared.dir
-/HD/Source/vm/lib/TCPServer/build/CMakeFiles/TCPServer_static.dir
-/HD/Source/vm/lib/TCPServer/build/CMakeFiles/edit_cache.dir
-/HD/Source/vm/lib/TCPServer/build/CMakeFiles/rebuild_cache.dir
