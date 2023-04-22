@@ -9,8 +9,8 @@
 #include <string.h>
 #include <unistd.h>
 
-#include "d_structs.h"
 #include "log.h"
+#include "sllist.h"
 
 /**
  * @brief Execute command in terminal and return the output

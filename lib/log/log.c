@@ -4,8 +4,7 @@
 
 #include "log.h"
 
-#define LOG_FOLDER "/root/log/"
-
+char LOG_FOLDER[200] = "/HD/Source/vm/logs/";
 #define printerr(...) fprintf(stderr, __VA_ARGS__)
 
 static const char *LOG_TYPE_STR[] =
@@ -74,10 +73,11 @@ void LOG_MSG(LOG_TYPE type, char *exec_file_func, const char *exec_func, int exe
     strcat(log_name, exec_name);
     strcat(log_name, ".log");
 
+
     // Open the log file and create it if it doesn't exist
     FILE *FILE_lname = fopen(log_name, "a");
     if (FILE_lname == NULL)
-        perror("LOG_MSG. Error opening file: %s", log_name);
+        printerr("LOG_MSG. Error opening file: %s", log_name);
 
     fprintf(FILE_lname, "[%s] %s ", LOG_TYPE_STR[type], time);
     vfprintf(FILE_lname, message, args);

@@ -1,3 +1,7 @@
+#### OBS
+
+if you change the machine, change the LOG_FOLDER inside the log.c file
+
 ### INSTALATION
 
 `
@@ -61,3 +65,4 @@ All libraries must respect this following project structures (based on unix stan
     * Static libname_static.a file in /lib/libname/libname_static.a.
     * Shared libname_shared.so file in /lib/libname/libname_shared.so.
 
+You can read more about this in the [CMakeLists.txt](./lib/README.md) file.

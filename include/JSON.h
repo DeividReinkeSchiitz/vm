@@ -4,11 +4,11 @@
 
 #pragma once
 
-#include "d_structs.h"
+#include "sllist.h"
 #include <malloc.h>
 #include <stdarg.h>
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define JSON_NAME_MALLOC 32
 #define JSON_DATA_MALLOC 256
@@ -128,17 +128,19 @@
  * JSON List structure
  */
 
-typedef enum JSON_NODE_TYPE {
-    JSON_NULL = 2,
+typedef enum JSON_NODE_TYPE
+{
+    JSON_NULL    = 2,
     JSON_BOOLEAN = 3,
-    JSON_NUMBER = 4,
-    JSON_STRING = 5,
-    JSON_ARRAY = 6,
-    JSON_OBJECT = 7,
+    JSON_NUMBER  = 4,
+    JSON_STRING  = 5,
+    JSON_ARRAY   = 6,
+    JSON_OBJECT  = 7,
     JSON_DECODER = 8,
 } JSON_NODE_TYPE;
 
-typedef struct JSON_node {
+typedef struct JSON_node
+{
     char *name;
     char *data_str;
 
@@ -147,7 +149,8 @@ typedef struct JSON_node {
     struct JSON_node *next;
 } JSON_node;
 
-typedef struct JSON_list {
+typedef struct JSON_list
+{
     JSON_node *head;
     JSON_node *tail;
 

@@ -38,5 +38,4 @@ typedef enum LOG_TYPE
  */
 void LOG_MSG(LOG_TYPE type, char *exec_file_func, const char *exec_func, int exec_line, char *message, ...);
 
-
 void get_exec_name(char name[NAME_MAX]);

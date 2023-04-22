@@ -13,8 +13,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-#include "d_structs.h"
-#include "exceptions.h"
+#include "sllist.h"
 
 #define DEFAULT_PORT 12345
 #define BUFFER_LENGTH 1024
