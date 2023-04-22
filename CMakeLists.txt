@@ -10,11 +10,11 @@ file(GLOB LIBS "lib/*")
 message(STATUS "Starting to build libraries...")
 foreach (LIB ${LIBS})
     if (IS_DIRECTORY ${LIB})
-        # get the name of the folder
+        # get the name of the folder (is the name of the library)
         get_filename_component(LIB_NAME ${LIB} NAME)
         message(STATUS "${LIB_NAME}: ")
 
-        # add the folder as a subdirectory
+        # add the folder as a subdirectory.
         add_subdirectory(${LIB})
 
         # set the output directory of the library

@@ -34,6 +34,8 @@ file(GLOB GOOGLE_LIBRARIES ${CMAKE_CURRENT_SOURCE_DIR}/../../vendor/googletest/b
 
 # get shared library to use in tests
 set(SHARED_LIBRARY ${CMAKE_CURRENT_SOURCE_DIR}/lib${PROJECT_NAME}_shared.so)
+
+# join all libraries
 set(LIBRARIES_FILES ${GOOGLE_LIBRARIES} ${SHARED_LIBRARY})
 
 # create test executable
