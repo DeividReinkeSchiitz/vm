@@ -1,0 +1,6 @@
+[submodule "workers/discord_bots/faroSounds"]
+	path = workers/discord_bots/faroSounds
+	url = git@github.com:DeividReinkeSchiitz/FaroSounds.git
+[submodule "workers/discord_bots/faustoBot"]
+	path = workers/discord_bots/faustoBot
+	url = git@github.com:DeividReinkeSchiitz/FaustoBot.git
