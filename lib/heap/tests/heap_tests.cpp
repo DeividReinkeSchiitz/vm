@@ -6,6 +6,20 @@ extern "C"
 #include <gtest/gtest.h>
 #include <iostream>
 
+TEST(HeapTest, MakeTest)
+{
+    int heap[MAX_HEAP_SIZE]     = {26, 4, 12, 18, 16, 8, 9, 6};
+    int expected[MAX_HEAP_SIZE] = {26, 18, 12, 4, 16, 8, 9};
+    int n                       = 7;
+
+    heap_make(n, heap);
+
+    for (int i = 0; i < n; i++)
+    {
+        EXPECT_EQ(expected[i], heap[i]);
+    }
+}
+
 TEST(HeapTest, MaxHeapTest)
 {
     int heap[MAX_HEAP_SIZE] = {10, 20, 15, 40, 50, 100, 25};

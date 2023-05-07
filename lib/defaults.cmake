@@ -34,9 +34,11 @@ file(GLOB GOOGLE_LIBRARIES ${CMAKE_CURRENT_SOURCE_DIR}/../../vendor/googletest/b
 
 # get shared library to use in tests
 set(SHARED_LIBRARY ${CMAKE_CURRENT_SOURCE_DIR}/lib${PROJECT_NAME}_shared.so)
+# get static library to use in tests
+set(STATIC_LIBRARY ${CMAKE_CURRENT_SOURCE_DIR}/lib${PROJECT_NAME}_static.a)
 
 # join all libraries
-set(LIBRARIES_FILES ${GOOGLE_LIBRARIES} ${SHARED_LIBRARY})
+set(LIBRARIES_FILES ${GOOGLE_LIBRARIES} ${SHARED_LIBRARY} ${STATIC_LIBRARY})
 
 # create test executable
 set(EXECUTABLE_NAME ${PROJECT_NAME}_tests)
@@ -44,6 +46,9 @@ add_executable(${EXECUTABLE_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/tests/${EXECUTABLE
 
 # link test executable with libraries
 target_link_libraries(${EXECUTABLE_NAME} PUBLIC ${LIBRARIES_FILES})
+
+## add dependency from test executable to static library
+#add_dependencies(${EXECUTABLE_NAME} ${PROJECT_NAME}_shared ${PROJECT_NAME}_static)
 
 # include external headers in test executable
 target_include_directories(${EXECUTABLE_NAME} PUBLIC

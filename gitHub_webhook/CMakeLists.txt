@@ -18,13 +18,13 @@ option(RELEASE "Build shared libraries" OFF)
 if (RELEASE)
     set(LIBRARY_FILES
             ${CMAKE_CURRENT_SOURCE_DIR}/../lib/TCPServer/libTCPServer_static.a
-            ${CMAKE_CURRENT_SOURCE_DIR}/../lib/d_structs/libd_structs_static.a
+            ${CMAKE_CURRENT_SOURCE_DIR}/../lib/sllist/libsllist_static.a
             ${CMAKE_CURRENT_SOURCE_DIR}/../lib/JSON/libJSON_static.a
             ${CMAKE_CURRENT_SOURCE_DIR}/../lib/hmac/libhmac_static.a)
 else ()
     set(LIBRARY_FILES
             ${CMAKE_CURRENT_SOURCE_DIR}/../lib/TCPServer/libTCPServer_shared.so
-            ${CMAKE_CURRENT_SOURCE_DIR}/../lib/d_structs/libd_structs_shared.so
+            ${CMAKE_CURRENT_SOURCE_DIR}/../lib/sllist/libsllist_shared.so
             ${CMAKE_CURRENT_SOURCE_DIR}/../lib/JSON/libJSON_shared.so
             ${CMAKE_CURRENT_SOURCE_DIR}/../lib/hmac/libhmac_shared.so)
 endif ()

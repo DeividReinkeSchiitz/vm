@@ -4,7 +4,7 @@
 
 extern "C"
 {
-    //#include "log.h"
+#include "sllist.h"
 }
 
 #include <gtest/gtest.h>
