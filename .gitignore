@@ -3,5 +3,7 @@ rm -rf node_modules
 
 #/ remove all content inside build recursively
 rm -rf build/*
+rm -rf ./build/*
+
 /workers/discord_bots/node-v12.10.0/
 
