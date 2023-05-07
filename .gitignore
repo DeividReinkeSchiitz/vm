@@ -1,9 +1,9 @@
-#/ remove all node modules recursively
-rm -rf node_modules
+#/ remove recursively all node modules
+**/node_modules/*
 
 #/ remove all content inside build recursively
-rm -rf build/*
-rm -rf ./build/*
+**/build/*
 
 /workers/discord_bots/node-v12.10.0/
+
 
