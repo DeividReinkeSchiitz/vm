@@ -3,46 +3,10 @@
 //
 
 #include "dijkstra.h"
+#include "internal.h"
 #include "string.h"
-/* **************************************************************
- * DYNAMIC GRAPH
- * **************************************************************/
 
-Edge *edge_mk(int weight, char *vertex)
-{
-    Edge *new_edge = malloc(sizeof(Edge));
-    if (new_edge == NULL)
-        perror("Edge Overflow");
-
-    strcpy(new_edge->vertex, vertex);
-    new_edge->weight = weight;
-    new_edge->next   = NULL;
-
-    return new_edge;
-}
-
-void dgraph_pushedge(DGraph *g, int src, char *vertex, int weight)
-{
-    if (src >= g->capacity)
-        perror("Dynamic Graph Overflow");
-
-    Edge *new_edge = edge_mk(weight, vertex);
-
-    if (g->adj[src] == NULL)
-    {
-        g->adj[src] = new_edge;
-        g->num_vertices++;
-        return;
-    }
-
-    Edge *last = g->adj[src];
-    while (last->next != NULL)
-        last = last->next;
-
-    last->next = new_edge;
-}
-
-DGraph *dgraph_mk(int capacity)
+DGraph *dijkstra_gmk(int capacity)
 {
     DGraph *new_graph = malloc(sizeof(DGraph));
     if (new_graph == NULL)
@@ -61,15 +25,41 @@ DGraph *dgraph_mk(int capacity)
     return new_graph;
 }
 
-HeapNode createHeapNode(char *vertex, int weight)
+static Edge *dijkstra_emk(int weight, char *vertex)
 {
-    HeapNode node;
-    strcpy(node.vertex, vertex);
-    node.weight = weight;
-    return node;
+    Edge *new_edge = malloc(sizeof(Edge));
+    if (new_edge == NULL)
+        perror("Edge Overflow");
+
+    strcpy(new_edge->vertex, vertex);
+    new_edge->weight = weight;
+    new_edge->next   = NULL;
+
+    return new_edge;
 }
 
-Heap *createHeap(int capacity)
+void dijkstra_pushe(DGraph *graph, int index, char *vertex, int weight)
+{
+    if (index >= graph->capacity)
+        perror("Dynamic Graph Overflow");
+
+    Edge *new_edge = dijkstra_emk(weight, vertex);
+
+    if (graph->adj[index] == NULL)
+    {
+        graph->adj[index] = new_edge;
+        graph->num_vertices++;
+        return;
+    }
+
+    Edge *last = graph->adj[index];
+    while (last->next != NULL)
+        last = last->next;
+
+    last->next = new_edge;
+}
+
+static Heap *dijkstra_heap_mk(int capacity)
 {
     Heap *heap = (Heap *) malloc(sizeof(Heap));
     if (heap == NULL)
@@ -84,32 +74,32 @@ Heap *createHeap(int capacity)
     return heap;
 }
 
-static int heap_dad(int i)
+static int dijkstra_heap_dad(int i)
 {
     return (i - 1) / 2;
 }
 
-static int heap_lson(int i)  // heap left son
+static int dijkstra_heap_lson(int i)  // heap left son
 {
     return 2 * (i + 1) - 1;
 }
 
-static int heap_rson(int i)  // heap right son
+static int dijkstra_heap_rson(int i)  // heap right son
 {
     return 2 * (i + 1);
 }
 
-static void heap_swap(HeapNode *i, HeapNode *j)
+static void dijkstra_heap_swap(HeapNode *i, HeapNode *j)
 {
     HeapNode save = *j;
     *j            = *i;
     *i            = save;
 }
 
-static void heapify_down(Heap *heap, int i)
+static void dijkstra_heapify_down(Heap *heap, int i)
 {
-    int left     = heap_lson(i);
-    int right    = heap_rson(i);
+    int left     = dijkstra_heap_lson(i);
+    int right    = dijkstra_heap_rson(i);
     int smallest = i;
 
     if (left < heap->size && heap->arr[left].weight < heap->arr[smallest].weight)
@@ -124,21 +114,21 @@ static void heapify_down(Heap *heap, int i)
 
     if (smallest != i)
     {
-        heap_swap(&heap->arr[i], &heap->arr[smallest]);
-        heapify_down(heap, smallest);
+        dijkstra_heap_swap(&heap->arr[i], &heap->arr[smallest]);
+        dijkstra_heapify_down(heap, smallest);
     }
 }
 
-static void heapify_up(Heap *heap, int i)
+static void dijkstra_heapify_up(Heap *heap, int i)
 {
-    while (i > 0 && heap->arr[heap_dad(i)].weight > heap->arr[i].weight)
+    while (i > 0 && heap->arr[dijkstra_heap_dad(i)].weight > heap->arr[i].weight)
     {
-        heap_swap(&heap->arr[heap_dad(i)], &heap->arr[i]);
-        i = heap_dad(i);
+        dijkstra_heap_swap(&heap->arr[dijkstra_heap_dad(i)], &heap->arr[i]);
+        i = dijkstra_heap_dad(i);
     }
 }
 
-void heap_insert(Heap *heap, char *vertex, int weight)
+static void dijkstra_heap_insert(Heap *heap, char *vertex, int weight)
 {
     if (heap->size == heap->capacity)
     {
@@ -148,12 +138,13 @@ void heap_insert(Heap *heap, char *vertex, int weight)
     heap->size++;
     int i = heap->size - 1;
     strcpy(heap->arr[i].vertex, vertex);
-    heap->arr[i].weight = weight;
+    heap->arr[i].weight   = weight;
+    heap->arr[i].distance = 0;
 
-    heapify_up(heap, i);
+    dijkstra_heapify_up(heap, i);
 }
 
-HeapNode heap_extractmin(Heap *heap)
+static HeapNode dijkstra_heap_extract_min(Heap *heap)
 {
     if (heap->size == 0)
         perror("Heap Underflow");
@@ -163,26 +154,28 @@ HeapNode heap_extractmin(Heap *heap)
         HeapNode min = heap->arr[0];
         heap->arr[0] = heap->arr[heap->size - 1];
         heap->size--;
-        heapify_down(heap, 0);
+        dijkstra_heapify_down(heap, 0);
 
         return min;
     }
+
+    return heap->arr[0];
 }
 
-void heap_decrease_key(Heap *g, int i, int key)
+static void dijkstra_heap_decrease_key(Heap *g, int i, int key, int distance)
 {
     if (key > g->arr[i].weight)
-    {
         perror("New key is greater than current key");
-    }
 
-    g->arr[i].weight = key;
+    g->arr[i].weight   = key;
+    g->arr[i].distance = distance;
 
-    heapify_up(g, i);
+    dijkstra_heapify_up(g, i);
 }
 
 //convert a vertex name to its corresponding index in the adjacency list
-int node_indexG(DGraph *graph, char *vertex)
+// TODO: Implement a better node_indexG
+static int node_indexG(DGraph *graph, char *vertex)
 {
     for (int i = 0; i < graph->num_vertices; i++)
     {
@@ -192,7 +185,8 @@ int node_indexG(DGraph *graph, char *vertex)
     return -1;
 }
 
-int node_indexH(Heap *heap, char *vertex)
+// TODO: Reduce node_indexH time complexity
+static int node_indexH(Heap *heap, char *vertex)
 {
     for (int i = 0; i < heap->size; i++)
     {
@@ -202,65 +196,103 @@ int node_indexH(Heap *heap, char *vertex)
     return -1;
 }
 
-
-unsigned int minCost(DGraph *graph)
+unsigned int dijkstra_min_cost(DGraph *graph, char *src, char *dest)
 {
-    int cost = 0;
+    int cost       = 0;
+    int src_index  = -1;
+    int dest_index = -1;
 
     //  Initialize the distances to infinity and the root to zero
     for (int i = 0; i < graph->num_vertices; i++)
-        graph->adj[i]->weight = INT_MAX;
+    {
+        graph->adj[i]->weight  = INT_MAX;
+        graph->adj[i]->visited = 0;
 
-    graph->adj[0]->weight  = 0;
-    graph->adj[0]->visited = 1;
+        if (strcmp(graph->adj[i]->vertex, src) == 0)
+            src_index = i;
+
+        if (dest != NULL && strcmp(graph->adj[i]->vertex, dest) == 0)
+            dest_index = i;
+    }
+
+    // Check if the source vertex exists
+    if (src_index == -1)
+    {
+        perror("Source vertex not found");
+        return UINT_MAX;
+    }
+
+    //    // Check if the destination vertex exists
+    if (dest != NULL && dest_index == -1)
+    {
+        perror("Destination vertex not found");
+        return UINT_MAX;
+    }
+
+    // Set the root distance to zero
+    graph->adj[src_index]->weight  = 0;
+    graph->adj[src_index]->visited = 1;
 
     //  Initialize the heap
-    Heap *heap             = createHeap(graph->num_vertices);
+    Heap *heap                     = dijkstra_heap_mk(graph->num_vertices);
 
     for (int i = 0; i < graph->num_vertices; i++)
-        heap_insert(heap, graph->adj[i]->vertex, graph->adj[i]->weight);
+        dijkstra_heap_insert(heap, graph->adj[i]->vertex, graph->adj[i]->weight);
 
     while (heap->size > 0)
     {
-        HeapNode min                         = heap_extractmin(heap);
+        // Extract the minimum distance vertex from the heap
+        HeapNode min                         = dijkstra_heap_extract_min(heap);
+        // Get the index of the vertex in the adjacency list / graph
         int cur_graph_index                  = node_indexG(graph, min.vertex);
+        // Mark the vertex as visited
         graph->adj[cur_graph_index]->visited = 1;
 
-        cost += min.weight;
+        // Update the cost
+        cost                                 = cost + min.distance;
 
-        Edge *tmp = graph->adj[cur_graph_index]->next;
+        // Update the distances of the adjacent vertices
+        Edge *tmp                            = graph->adj[cur_graph_index]->next;
         while (tmp != NULL)
         {
+            // Get the index of the adjacent vertex in the adjacency list / graph
             int v = node_indexG(graph, tmp->vertex);
 
             if (graph->adj[v]->visited == 0 && tmp->weight + min.weight < graph->adj[v]->weight)
             {
                 graph->adj[v]->weight = tmp->weight + min.weight;
-                heap_decrease_key(heap, node_indexH(heap, tmp->vertex), tmp->weight);
+                dijkstra_heap_decrease_key(heap, node_indexH(heap, tmp->vertex), tmp->weight + min.weight, tmp->weight);
             }
 
             tmp = tmp->next;
         }
+
+        if (dest != NULL && strcmp(min.vertex, dest) == 0)
+            break;
     }
+
+    dijkstra_heap_free(heap);
 
     return cost;
 }
-void dgraph_delete(DGraph *g)
+void dijkstra_free(DGraph *g)
 {
     for (int i = 0; i < g->num_vertices; i++)
-        freeEdge(g->adj[i]);
+    {
+        Edge *tmp = g->adj[i];
+        while (tmp != NULL)
+        {
+            Edge *next = tmp->next;
+            free(tmp);
+            tmp = next;
+        }
+    }
 
     free(g);
 }
 
-void freeEdge(Edge *e)
+void dijkstra_heap_free(Heap *heap)
 {
-    // free the edge
-    Edge *tmp = e;
-    while (tmp != NULL)
-    {
-        Edge *next = tmp->next;
-        free(tmp);
-        tmp = next;
-    }
+    free(heap->arr);
+    free(heap);
 }

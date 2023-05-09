@@ -2,29 +2,23 @@
 // Created by deivid on 5/1/23.
 //
 
-#ifndef VM_DIJKSTRA_H
-#define VM_DIJKSTRA_H
-
-//
-// Created by deivid on 4/23/23.
-//
+#pragma once
 
 #include <limits.h>
 #include <malloc.h>
 #include <stdio.h>
 
 /* **************************************************************
- * DYNAMIC GRAPH
+ * DIJKSTRA GRAPH
  * **************************************************************/
 
-#define MAX_EDGE_VALUE 100
+#define MAX_VERTEX_NAME 100
 
 typedef struct Edge
 {
-    char vertex[MAX_EDGE_VALUE];  // ip
-    int weight;                   // priority/distance
+    char vertex[MAX_VERTEX_NAME];  // ip
+    int weight;                    // priority/distance
     int visited;
-    int distance;
     struct Edge *next;
 } Edge;
 
@@ -37,8 +31,9 @@ typedef struct DGraph
 
 typedef struct HeapNode
 {
-    char vertex[MAX_EDGE_VALUE];
+    char vertex[MAX_VERTEX_NAME];
     int weight;
+    int distance;
 } HeapNode;
 
 typedef struct Heap
@@ -48,33 +43,37 @@ typedef struct Heap
     HeapNode *arr;
 } Heap;
 
-Edge *edge_mk(int weight, char *vertex);
+/**
+ * @brief Make a new graph with capacity.
+ * @param capacity The maximum capacity of the graph.
+ * @return return a new graph.
+*/
+DGraph *dijkstra_gmk(int capacity);  // Dijkstra Graph Make
 
-DGraph *dgraph_mk(int capacity);
-void dgraph_pushedge(DGraph *g, int src, char *vertex, int weight);
+/**
+ * @brief Push a new edge in the graph.
+ * @param graph The Dijkstra graph created with dijkstra_gmk to push the edge.
+ * @param index The index vertex of the edge.
+ * @param vertex The vertex name of the edge to be pushed.
+ * @param weight The weight of the edge to be pushed.
+ * @return void.
+ */
+void dijkstra_pushe(DGraph *graph, int index, char *vertex, int weight);  // Dijkstra Push Edge
 
-HeapNode createHeapNode(char *vertex, int weight);
-Heap *createHeap(int capacity);
+/**
+ * @brief Dijkstra algorithm to find the minimum cost between two vertex.
+ * If dest is NULL, the algorithm will find the minimum cost between src and all other vertex.
+ * if dest or src is not in the graph, the algorithm will return UINT_MAX.
+ * @param graph The graph to be searched.
+ * @param src The source vertex.
+ * @param dest The destination vertex.
+ * @return return the minimum cost.
+ */
+unsigned int dijkstra_min_cost(DGraph *graph, char *src, char *dest);
 
-static int heap_lson(int i);  // heap left son
-static int heap_rson(int i);  // heap right son
-
-static void heap_swap(HeapNode *i, HeapNode *j);
-
-static void heapify_down(Heap *heap, int i);
-static void heapify_up(Heap *heap, int i);
-
-void heap_insert(Heap *heap, char *vertex, int weight);
-HeapNode heap_extractmin(Heap *heap);
-
-void heap_decrease_key(Heap *g, int i, int key);
-
-void dgraph_delete(DGraph *g);
-
-unsigned int minCost(DGraph *graph);
-void freeEdge(Edge *e);
-
-
-int node_indexG(DGraph *graph, char *vertex);
-int node_indexH(Heap *heap, char *vertex);
-#endif  //VM_DIJKSTRA_H
+/**
+ * @brief Free the heap.
+ * @param heap The heap to be freed.
+ * @return void.
+ */
+void dijkstra_free(DGraph *g);

@@ -2,7 +2,15 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/lib/JSON/build/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/TCPServer/build/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/dijkstra/build/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/heap/build/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/hmac/build/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/log/build/CMakeFiles" />
+      <excludeFolder url="file://$MODULE_DIR$/lib/sllist/build/CMakeFiles" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
