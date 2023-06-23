@@ -28,7 +28,7 @@ cmake --build ../ && make
 valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./Default
 `
 
-### packages
+### Packages
 
 `
 sudo apt-get install g++ cmake clang-format valgrind libssl-dev
