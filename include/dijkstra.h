@@ -57,17 +57,19 @@ DGraph *dijkstra_gmk(int capacity);  // Dijkstra Graph Make
  * @param vertex The vertex name of the edge to be pushed.
  * @param weight The weight of the edge to be pushed.
  * @return void.
+ * @note The first edge pushed in the graph will be the source vertex and the
+ * others will be the destination vertex.
  */
 void dijkstra_pushe(DGraph *graph, int index, char *vertex, int weight);  // Dijkstra Push Edge
 
 /**
  * @brief Dijkstra algorithm to find the minimum cost between two vertex.
- * If dest is NULL, the algorithm will find the minimum cost between src and all other vertex.
- * if dest or src is not in the graph, the algorithm will return UINT_MAX.
  * @param graph The graph to be searched.
  * @param src The source vertex.
  * @param dest The destination vertex.
  * @return return the minimum cost.
+ * @note If dest is NULL, the algorithm will find the minimum cost between src and all other vertex.
+ * if dest or src is not in the graph, the algorithm will return UINT_MAX.
  */
 unsigned int dijkstra_min_cost(DGraph *graph, char *src, char *dest);
 

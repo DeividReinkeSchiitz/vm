@@ -11,8 +11,6 @@
 /**
  * Data structure for the github server
  */
-
-
 typedef struct Github_Req
 {
     /**

@@ -2,10 +2,12 @@ cmake_minimum_required(VERSION 3.22)
 set(CMAKE_C_STANDARD 23)
 set(BINARY gitHub_webhook)
 
-project(${BINARY} CXX)
+project(${BINARY} C)
 
 set(EXTERNAL_INCLUDE_FOLDER ${CMAKE_CURRENT_SOURCE_DIR}/../include)
 set(HOME_INCLUDE_FOLDER ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+include_directories(${EXTERNAL_INCLUDE_FOLDER} ${HOME_INCLUDE_FOLDER})
 
 set(SOURCE_FILES
         ${BINARY}.c
@@ -34,5 +36,6 @@ message(STATUS "Building ${BINARY} with ${LIBRARY_FILES}")
 add_executable(${BINARY} ${SOURCE_FILES})
 target_link_libraries(${BINARY} ${LIBRARY_FILES})
 
-# set the output directory for the executable
+# set the output directory for the executable and create a copy in ${CMAKE_CURRENT_SOURCE_DIR}/../bin
 set_target_properties(${BINARY} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+add_custom_command(TARGET ${BINARY} POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:${BINARY}> ${CMAKE_CURRENT_SOURCE_DIR}/../bin/${BINARY})
