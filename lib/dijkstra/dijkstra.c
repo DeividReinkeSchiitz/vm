@@ -12,12 +12,9 @@ DGraph *dijkstra_gmk(int capacity)
     if (new_graph == NULL)
         perror("Dynamic Graph Overflow");
 
-    new_graph->adj = malloc(sizeof(Edge *) * capacity);
+    new_graph->adj = calloc(capacity, sizeof(Edge *));
     if (new_graph->adj == NULL)
         perror("Dynamic Graph Overflow");
-
-    for (int i = 0; i < capacity; i++)
-        new_graph->adj[i] = NULL;
 
     new_graph->capacity     = capacity;
     new_graph->num_vertices = 0;
@@ -45,6 +42,7 @@ void dijkstra_pushe(DGraph *graph, int index, char *vertex, int weight)
 
     Edge *new_edge = dijkstra_emk(weight, vertex);
 
+    // If the index is empty, just add the new edge.
     if (graph->adj[index] == NULL)
     {
         graph->adj[index] = new_edge;
@@ -52,8 +50,9 @@ void dijkstra_pushe(DGraph *graph, int index, char *vertex, int weight)
         return;
     }
 
+    // If the index is not empty, add the new edge at the end of the list.
     Edge *last = graph->adj[index];
-    while (last->next != NULL)
+    while (last != NULL && last->next != NULL)
         last = last->next;
 
     last->next = new_edge;
@@ -173,8 +172,7 @@ static void dijkstra_heap_decrease_key(Heap *g, int i, int key, int distance)
     dijkstra_heapify_up(g, i);
 }
 
-//convert a vertex name to its corresponding index in the adjacency list
-// TODO: Implement a better node_indexG
+// TODO: try to implement a better node_indexG
 static int node_indexG(DGraph *graph, char *vertex)
 {
     for (int i = 0; i < graph->num_vertices; i++)
@@ -222,7 +220,7 @@ unsigned int dijkstra_min_cost(DGraph *graph, char *src, char *dest)
         return UINT_MAX;
     }
 
-    //    // Check if the destination vertex exists
+    // Check if the destination vertex exists
     if (dest != NULL && dest_index == -1)
     {
         perror("Destination vertex not found");
@@ -238,7 +236,7 @@ unsigned int dijkstra_min_cost(DGraph *graph, char *src, char *dest)
 
     for (int i = 0; i < graph->num_vertices; i++)
         dijkstra_heap_insert(heap, graph->adj[i]->vertex, graph->adj[i]->weight);
-
+    
     while (heap->size > 0)
     {
         // Extract the minimum distance vertex from the heap
@@ -275,19 +273,23 @@ unsigned int dijkstra_min_cost(DGraph *graph, char *src, char *dest)
 
     return cost;
 }
+
 void dijkstra_free(DGraph *g)
 {
+    Edge *tmp  = NULL;
+    Edge *next = NULL;
     for (int i = 0; i < g->num_vertices; i++)
     {
-        Edge *tmp = g->adj[i];
+        tmp = g->adj[i];
         while (tmp != NULL)
         {
-            Edge *next = tmp->next;
+            next = tmp->next;
             free(tmp);
             tmp = next;
         }
     }
 
+    free(g->adj);
     free(g);
 }
 

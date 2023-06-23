@@ -10,7 +10,6 @@ extern "C"
 #include <gtest/gtest.h>
 #include <iostream>
 
-
 TEST(DijkstraTest, PushTest)
 {
     DGraph *g = dijkstra_gmk(3);
