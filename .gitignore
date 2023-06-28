@@ -4,6 +4,4 @@
 #/ remove all content inside build recursively
 **/build/*
 
-/workers/discord_bots/node-v12.10.0/
-
 .idea
