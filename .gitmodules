@@ -4,3 +4,6 @@
 [submodule "workers/discord_bots/faustoBot"]
 	path = workers/discord_bots/faustoBot
 	url = git@github.com:DeividReinkeSchiitz/FaustoBot.git
+[submodule "vendor/googletest"]
+	path = vendor/googletest
+	url = git@github.com:google/googletest.git
