@@ -65,6 +65,7 @@ TEST(bstOrder, bst_postorder)
 
     bst_free(root);
 }
+
 TEST(bstOrder, bst_inorder)
 {
     BST_Node *root = bst_mk(6);
@@ -122,7 +123,6 @@ TEST(bstOrder, bst_lvlorder)
     EXPECT_TRUE(true);
 }
 
-
 TEST(bstSort, sort)
 {
     int array[]    = {50, 30, 20, 40, 70, 60, 80};
@@ -148,6 +148,59 @@ TEST(bstMinMax, min)
 
     EXPECT_EQ(bst_min(root), 2);
     EXPECT_EQ(bst_max(root), 8);
+
+    bst_free(root);
+    EXPECT_TRUE(true);
+}
+
+TEST(bstDelete, bst_delete)
+{
+    BST_Node *root = bst_mk(6);
+
+    // print root address
+    bst_insert(root, 5);
+    bst_insert(root, 5);
+    bst_insert(root, 2);
+    bst_insert(root, 7);
+    bst_insert(root, 8);
+
+    bst_delete(root, 6);
+
+    EXPECT_EQ(bst_min(root), 2);
+    EXPECT_EQ(bst_max(root), 8);
+
+    bst_free(root);
+    EXPECT_TRUE(true);
+}
+
+
+TEST(bstSuccessor, bst_successor)
+{
+    BST_Node *root = bst_mk(15);
+
+    // print root address
+    bst_insert(root, 10);
+    bst_insert(root, 20);
+    bst_insert(root, 8);
+    bst_insert(root, 12);
+    bst_insert(root, 17);
+    bst_insert(root, 25);
+    bst_insert(root, 6);
+    bst_insert(root, 11);
+    bst_insert(root, 16);
+    bst_insert(root, 27);
+
+    EXPECT_EQ(bst_successor(root, 15)->data, 16);
+    EXPECT_EQ(bst_successor(root, 10)->data, 11);
+    EXPECT_EQ(bst_successor(root, 20)->data, 25);
+    EXPECT_EQ(bst_successor(root, 8)->data, 10);
+    EXPECT_EQ(bst_successor(root, 12)->data, 15);
+    EXPECT_EQ(bst_successor(root, 17)->data, 20);
+    EXPECT_EQ(bst_successor(root, 25)->data, 27);
+    EXPECT_EQ(bst_successor(root, 6)->data, 8);
+    EXPECT_EQ(bst_successor(root, 11)->data, 12);
+    EXPECT_EQ(bst_successor(root, 16)->data, 17);
+    EXPECT_EQ(bst_successor(root, 27), nullptr);
 
     bst_free(root);
     EXPECT_TRUE(true);

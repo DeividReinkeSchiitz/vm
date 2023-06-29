@@ -57,21 +57,32 @@ void bst_insert(BST_Node *root, int data)
 
 int bst_min(BST_Node *root)
 {
+    return bst_minNode(root)->data;
+}
+
+int bst_max(BST_Node *root)
+{
+    return bst_maxNode(root)->data;
+}
+
+BST_Node *bst_minNode(BST_Node *root)
+{
     BST_Node *x = root;
     while (x->left != NULL)
         x = x->left;
 
-    return x->data;
+    return x;
 }
 
-int bst_max(BST_Node *root)
+BST_Node *bst_maxNode(BST_Node *root)
 {
     BST_Node *x = root;
     while (x->right != NULL)
         x = x->right;
 
-    return x->data;
+    return x;
 }
+
 
 int bst_preorder(BST_Node *root, int *arr)
 {
@@ -114,7 +125,6 @@ int bst_postorder(BST_Node *root, int *arr)
     return i;
 }
 
-
 int bst_lvlorder(BST_Node *root, int *arr, int size)
 {
     if (root == NULL)
@@ -151,6 +161,41 @@ int bst_lvlorder(BST_Node *root, int *arr, int size)
     return front;
 }
 
+/**
+ *      15
+ *   12    20
+ *10   13     22
+ *        14      24
+ */
+BST_Node *bst_successor(BST_Node *root, int data)
+{
+    if (root == NULL || (root->left == NULL && root->right == NULL))
+        return root;
+
+    BST_Node *current   = root;
+    BST_Node *successor = NULL;
+
+    while (current->data != data)
+    {
+        if (data < current->data)
+        {
+            successor = current;
+            current   = current->left;
+        }
+        else
+        {
+            current = current->right;
+        }
+    }
+
+    if (current->right != NULL)
+        return bst_minNode(current->right);
+    else if (successor != NULL)
+        return successor;
+    else
+        return NULL;
+}
+
 void bst_sort(int *arr, int size)
 {
     BST_Node *root = bst_mk(arr[0]);
@@ -162,6 +207,49 @@ void bst_sort(int *arr, int size)
 
     bst_free(root);
 }
+
+BST_Node *bst_delete(BST_Node *root, int data)
+{
+    if (root == NULL)
+        return root;
+
+    if (data < root->data)
+        root->left = bst_delete(root->left, data);
+    else if (data > root->data)
+        root->right = bst_delete(root->right, data);
+    else  // data == root->data
+    {
+        // No child
+        if (root->left == NULL && root->right == NULL)
+        {
+            free(root);
+            root = NULL;
+        }
+        // One child
+        else if (root->left == NULL)
+        {
+            BST_Node *temp = root;
+            root           = root->right;
+            free(temp);
+        }
+        else if (root->right == NULL)
+        {
+            BST_Node *temp = root;
+            root           = root->left;
+            free(temp);
+        }
+        // Two children
+        else
+        {
+            BST_Node *temp = bst_minNode(root->right);
+            root->data     = temp->data;
+            root->right    = bst_delete(root->right, temp->data);
+        }
+    }
+
+    return root;
+}
+
 
 void bst_free(BST_Node *root)
 {

@@ -87,11 +87,41 @@ int bst_max(BST_Node *root);  // Binary Search Tree Maximum
 int bst_min(BST_Node *root);  // Binary Search Tree Minimum
 
 /**
+ * @brief Get the maximum node of the binary search tree.
+ * @param root The root of the binary search tree.
+ * @return The maximum node of the binary search tree.
+*/
+BST_Node *bst_maxNode(BST_Node *root);  // Binary Search Tree Maximum Node
+
+/**
+ * @brief Get the minimum node of the binary search tree.
+ * @param root The root of the binary search tree.
+ * @return The minimum node of the binary search tree.
+*/
+BST_Node *bst_minNode(BST_Node *root);  // Binary Search Tree Minimum Node
+
+/**
  * @brief Find the node by data .
  * @param root The root of the binary search tree.
  * @return The node with the data.
 */
 BST_Node *bst_searchNode(BST_Node *root, int data);  // Binary Search Tree Find Node
+
+/**
+ * @brief Find the node successor of the data.
+ * @param root The root of the binary search tree.
+ * @param data The data to find the successor.
+*/
+BST_Node *bst_successor(BST_Node *root, int data);  // Binary Search Tree Successor
+
+
+/**
+ * @brief Delete a node from the binary search tree.
+ * @param root The root of the binary search tree.
+ * @param data The data of the Node to be deleted.
+ * @return The root of the binary search tree.
+*/
+BST_Node *bst_delete(BST_Node *root, int data);  // Binary Search Tree Delete
 
 /**
  * @brief Free the binary search tree.
