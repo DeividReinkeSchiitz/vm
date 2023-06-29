@@ -10,10 +10,11 @@ extern "C"
 #include <gtest/gtest.h>
 #include <iostream>
 
-TEST(bstInsert, insert)
+TEST(bstOrder, bst_preorder)
 {
     BST_Node *root = bst_mk(6);
 
+    // print root address
     bst_insert(root, 5);
     bst_insert(root, 5);
     bst_insert(root, 2);
@@ -23,7 +24,62 @@ TEST(bstInsert, insert)
     int arr[10] = {};
     int i       = 0;
 
-    bst_inorder(root, arr, &i);
+    i           = bst_preorder(root, arr);
+
+    EXPECT_EQ(arr[0], 6);
+    EXPECT_EQ(arr[1], 5);
+    EXPECT_EQ(arr[2], 2);
+    EXPECT_EQ(arr[3], 5);
+    EXPECT_EQ(arr[4], 7);
+    EXPECT_EQ(arr[5], 8);
+
+    EXPECT_EQ(i, 6);
+
+    bst_free(root);
+}
+
+TEST(bstOrder, bst_postorder)
+{
+    BST_Node *root = bst_mk(6);
+
+    // print root address
+    bst_insert(root, 5);
+    bst_insert(root, 5);
+    bst_insert(root, 2);
+    bst_insert(root, 7);
+    bst_insert(root, 8);
+
+    int arr[10] = {};
+    int i       = 0;
+
+    i           = bst_postorder(root, arr);
+
+    EXPECT_EQ(arr[0], 2);
+    EXPECT_EQ(arr[1], 5);
+    EXPECT_EQ(arr[2], 5);
+    EXPECT_EQ(arr[3], 8);
+    EXPECT_EQ(arr[4], 7);
+    EXPECT_EQ(arr[5], 6);
+
+    EXPECT_EQ(i, 6);
+
+    bst_free(root);
+}
+TEST(bstOrder, bst_inorder)
+{
+    BST_Node *root = bst_mk(6);
+
+    // print root address
+    bst_insert(root, 5);
+    bst_insert(root, 5);
+    bst_insert(root, 2);
+    bst_insert(root, 7);
+    bst_insert(root, 8);
+
+    int arr[10] = {};
+    int i       = 0;
+
+    i           = bst_inorder(root, arr);
 
     EXPECT_EQ(arr[0], 2);
     EXPECT_EQ(arr[1], 5);
@@ -32,9 +88,40 @@ TEST(bstInsert, insert)
     EXPECT_EQ(arr[4], 7);
     EXPECT_EQ(arr[5], 8);
 
+    EXPECT_EQ(i, 6);
+
+    bst_free(root);
+}
+
+TEST(bstOrder, bst_lvlorder)
+{
+    BST_Node *root = bst_mk(6);
+
+    // print root address
+    bst_insert(root, 5);
+    bst_insert(root, 5);
+    bst_insert(root, 2);
+    bst_insert(root, 7);
+    bst_insert(root, 8);
+
+    int arr[10] = {};
+    int size    = 10;
+    int i       = 0;
+
+    i           = bst_lvlorder(root, arr, size);
+
+    EXPECT_EQ(arr[0], 6);
+    EXPECT_EQ(arr[1], 5);
+    EXPECT_EQ(arr[2], 7);
+    EXPECT_EQ(arr[3], 2);
+    EXPECT_EQ(arr[4], 5);
+    EXPECT_EQ(arr[5], 8);
+    EXPECT_EQ(i, 6);
+
     bst_free(root);
     EXPECT_TRUE(true);
 }
+
 
 TEST(bstSort, sort)
 {
@@ -46,6 +133,24 @@ TEST(bstSort, sort)
 
     for (int i = 0; i < n; i++)
         EXPECT_EQ(expected[i], array[i]);
+}
+
+TEST(bstMinMax, min)
+{
+    BST_Node *root = bst_mk(6);
+
+    // print root address
+    bst_insert(root, 5);
+    bst_insert(root, 5);
+    bst_insert(root, 2);
+    bst_insert(root, 7);
+    bst_insert(root, 8);
+
+    EXPECT_EQ(bst_min(root), 2);
+    EXPECT_EQ(bst_max(root), 8);
+
+    bst_free(root);
+    EXPECT_TRUE(true);
 }
 
 int main(int argc, char **argv)

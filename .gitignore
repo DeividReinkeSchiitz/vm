@@ -3,5 +3,4 @@
 
 #/ remove all content inside build recursively
 **/build/*
-
-.idea
+**/.idea/*

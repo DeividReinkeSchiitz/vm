@@ -28,4 +28,5 @@ endforeach ()
 
 #### EXECUTABLE #####
 message(STATUS "Starting to build executables...")
-add_subdirectory(./gitHub_webhook)
+#add_subdirectory(./gitHub_webhook)
+add_subdirectory(./sorter_comp)
