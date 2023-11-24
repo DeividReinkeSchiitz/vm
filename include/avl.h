@@ -62,7 +62,7 @@ struct AVL_Node *avl_rightRotate(struct AVL_Node *y);
  * @param b The second number.
  * @return The maximum between two numbers.
  */
-int avl_max(int a, int b);
+int cavl_max(int a, int b);
 
 /**
  * @brief Get the height of the node.
