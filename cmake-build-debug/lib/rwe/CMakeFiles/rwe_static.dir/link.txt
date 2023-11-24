@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/deivid/Source/vm/lib/rwe/librwe_static.a CMakeFiles/rwe_static.dir/rwe.c.o
+/usr/bin/ranlib /home/deivid/Source/vm/lib/rwe/librwe_static.a

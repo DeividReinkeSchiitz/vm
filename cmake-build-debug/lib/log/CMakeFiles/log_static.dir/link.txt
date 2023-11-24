@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/deivid/Source/vm/lib/log/liblog_static.a CMakeFiles/log_static.dir/log.c.o
+/usr/bin/ranlib /home/deivid/Source/vm/lib/log/liblog_static.a

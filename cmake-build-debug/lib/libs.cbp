@@ -1,0 +1,1727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="libs"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\JSON\;CMake Files\lib\TCPServer\;CMake Files\lib\avl\;CMake Files\lib\bst\;CMake Files\lib\dijkstra\;CMake Files\lib\hashTable\;CMake Files\lib\heap\;CMake Files\lib\hmac\;CMake Files\lib\log\;CMake Files\lib\rwe\;CMake Files\lib\sllist\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\usr\lib\cmake\;CMake Files\..\..\..\..\usr\lib\cmake\GTest\;CMake Files\cep_reader\;CMake Files\cep_reader\lib\;CMake Files\cep_reader\lib\cep_avl\;CMake Files\sorter_comp\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="JSON_static">
+				<Option output="/home/deivid/Source/vm/lib/JSON/libJSON_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/JSON"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/JSON/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 JSON_static"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="JSON_static/fast">
+				<Option output="/home/deivid/Source/vm/lib/JSON/libJSON_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/JSON"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/JSON/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 JSON_static/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="JSON_shared">
+				<Option output="/home/deivid/Source/vm/lib/JSON/libJSON_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/JSON"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/JSON/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 JSON_shared"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="JSON_shared/fast">
+				<Option output="/home/deivid/Source/vm/lib/JSON/libJSON_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/JSON"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/JSON/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 JSON_shared/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="JSON_tests">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/JSON/JSON_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/JSON"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/JSON/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/JSON/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 JSON_tests"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="JSON_tests/fast">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/JSON/JSON_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/JSON"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/JSON/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/JSON/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 JSON_tests/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/JSON/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TCPServer_static">
+				<Option output="/home/deivid/Source/vm/lib/TCPServer/libTCPServer_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/TCPServer/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 TCPServer_static"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TCPServer_static/fast">
+				<Option output="/home/deivid/Source/vm/lib/TCPServer/libTCPServer_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/TCPServer/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 TCPServer_static/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TCPServer_shared">
+				<Option output="/home/deivid/Source/vm/lib/TCPServer/libTCPServer_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/TCPServer/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 TCPServer_shared"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TCPServer_shared/fast">
+				<Option output="/home/deivid/Source/vm/lib/TCPServer/libTCPServer_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/TCPServer/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 TCPServer_shared/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TCPServer_tests">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/TCPServer_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/TCPServer/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/TCPServer/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 TCPServer_tests"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TCPServer_tests/fast">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/TCPServer_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/TCPServer/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/TCPServer/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 TCPServer_tests/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/TCPServer/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="avl_static">
+				<Option output="/home/deivid/Source/vm/lib/avl/libavl_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/avl"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/avl/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 avl_static"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="avl_static/fast">
+				<Option output="/home/deivid/Source/vm/lib/avl/libavl_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/avl"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/avl/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 avl_static/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="avl_shared">
+				<Option output="/home/deivid/Source/vm/lib/avl/libavl_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/avl"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/avl/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 avl_shared"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="avl_shared/fast">
+				<Option output="/home/deivid/Source/vm/lib/avl/libavl_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/avl"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/avl/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 avl_shared/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="avl_tests">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/avl/avl_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/avl"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/avl/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/avl/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 avl_tests"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="avl_tests/fast">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/avl/avl_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/avl"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/avl/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/avl/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 avl_tests/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/avl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bst_static">
+				<Option output="/home/deivid/Source/vm/lib/bst/libbst_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/bst"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/bst/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 bst_static"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bst_static/fast">
+				<Option output="/home/deivid/Source/vm/lib/bst/libbst_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/bst"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/bst/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 bst_static/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bst_shared">
+				<Option output="/home/deivid/Source/vm/lib/bst/libbst_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/bst"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/bst/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 bst_shared"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bst_shared/fast">
+				<Option output="/home/deivid/Source/vm/lib/bst/libbst_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/bst"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/bst/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 bst_shared/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bst_tests">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/bst/bst_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/bst"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/bst/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/bst/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 bst_tests"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="bst_tests/fast">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/bst/bst_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/bst"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/bst/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/bst/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 bst_tests/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/bst/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dijkstra_static">
+				<Option output="/home/deivid/Source/vm/lib/dijkstra/libdijkstra_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/dijkstra/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 dijkstra_static"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dijkstra_static/fast">
+				<Option output="/home/deivid/Source/vm/lib/dijkstra/libdijkstra_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/dijkstra/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 dijkstra_static/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dijkstra_shared">
+				<Option output="/home/deivid/Source/vm/lib/dijkstra/libdijkstra_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/dijkstra/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 dijkstra_shared"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dijkstra_shared/fast">
+				<Option output="/home/deivid/Source/vm/lib/dijkstra/libdijkstra_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/dijkstra/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 dijkstra_shared/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dijkstra_tests">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/dijkstra_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/dijkstra/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/dijkstra/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 dijkstra_tests"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dijkstra_tests/fast">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/dijkstra_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/dijkstra/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/dijkstra/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 dijkstra_tests/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/dijkstra/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hashTable_static">
+				<Option output="/home/deivid/Source/vm/lib/hashTable/libhashTable_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/hashTable"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/hashTable/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 hashTable_static"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hashTable_static/fast">
+				<Option output="/home/deivid/Source/vm/lib/hashTable/libhashTable_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/hashTable"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/hashTable/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 hashTable_static/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hashTable_shared">
+				<Option output="/home/deivid/Source/vm/lib/hashTable/libhashTable_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/hashTable"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/hashTable/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 hashTable_shared"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hashTable_shared/fast">
+				<Option output="/home/deivid/Source/vm/lib/hashTable/libhashTable_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/hashTable"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/hashTable/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 hashTable_shared/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hashTable_tests">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/hashTable_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/hashTable"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/hashTable/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/hashTable/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 hashTable_tests"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hashTable_tests/fast">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/hashTable_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/hashTable"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/hashTable/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/hashTable/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 hashTable_tests/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hashTable/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="heap_static">
+				<Option output="/home/deivid/Source/vm/lib/heap/libheap_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/heap"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/heap/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 heap_static"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="heap_static/fast">
+				<Option output="/home/deivid/Source/vm/lib/heap/libheap_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/heap"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/heap/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 heap_static/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="heap_shared">
+				<Option output="/home/deivid/Source/vm/lib/heap/libheap_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/heap"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/heap/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 heap_shared"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="heap_shared/fast">
+				<Option output="/home/deivid/Source/vm/lib/heap/libheap_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/heap"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/heap/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 heap_shared/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="heap_tests">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/heap/heap_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/heap"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/heap/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/heap/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 heap_tests"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="heap_tests/fast">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/heap/heap_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/heap"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/heap/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/heap/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 heap_tests/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/heap/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hmac_static">
+				<Option output="/home/deivid/Source/vm/lib/hmac/libhmac_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/hmac"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/hmac/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 hmac_static"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hmac_static/fast">
+				<Option output="/home/deivid/Source/vm/lib/hmac/libhmac_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/hmac"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/hmac/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 hmac_static/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hmac_shared">
+				<Option output="/home/deivid/Source/vm/lib/hmac/libhmac_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/hmac"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/hmac/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 hmac_shared"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hmac_shared/fast">
+				<Option output="/home/deivid/Source/vm/lib/hmac/libhmac_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/hmac"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/hmac/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 hmac_shared/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hmac_tests">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/hmac/hmac_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/hmac"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/hmac/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/hmac/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 hmac_tests"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hmac_tests/fast">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/hmac/hmac_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/hmac"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/hmac/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/hmac/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 hmac_tests/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/hmac/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="log_static">
+				<Option output="/home/deivid/Source/vm/lib/log/liblog_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/log"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/log/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 log_static"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="log_static/fast">
+				<Option output="/home/deivid/Source/vm/lib/log/liblog_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/log"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/log/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 log_static/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="log_shared">
+				<Option output="/home/deivid/Source/vm/lib/log/liblog_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/log"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/log/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 log_shared"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="log_shared/fast">
+				<Option output="/home/deivid/Source/vm/lib/log/liblog_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/log"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/log/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 log_shared/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="log_tests">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/log/log_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/log"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/log/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/log/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 log_tests"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="log_tests/fast">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/log/log_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/log"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/log/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/log/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 log_tests/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/log/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rwe_static">
+				<Option output="/home/deivid/Source/vm/lib/rwe/librwe_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/rwe"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/rwe/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 rwe_static"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rwe_static/fast">
+				<Option output="/home/deivid/Source/vm/lib/rwe/librwe_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/rwe"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/rwe/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 rwe_static/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rwe_shared">
+				<Option output="/home/deivid/Source/vm/lib/rwe/librwe_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/rwe"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/rwe/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 rwe_shared"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rwe_shared/fast">
+				<Option output="/home/deivid/Source/vm/lib/rwe/librwe_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/rwe"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/rwe/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 rwe_shared/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rwe_tests">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/rwe/rwe_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/rwe"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/rwe/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/rwe/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 rwe_tests"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rwe_tests/fast">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/rwe/rwe_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/rwe"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/rwe/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/rwe/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 rwe_tests/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/rwe/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sllist_static">
+				<Option output="/home/deivid/Source/vm/lib/sllist/libsllist_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/sllist"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/sllist/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 sllist_static"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sllist_static/fast">
+				<Option output="/home/deivid/Source/vm/lib/sllist/libsllist_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/sllist"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/sllist/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 sllist_static/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sllist_shared">
+				<Option output="/home/deivid/Source/vm/lib/sllist/libsllist_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/sllist"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/sllist/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 sllist_shared"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sllist_shared/fast">
+				<Option output="/home/deivid/Source/vm/lib/sllist/libsllist_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/sllist"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/lib/sllist/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 sllist_shared/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sllist_tests">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/sllist/sllist_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/sllist"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/sllist/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/sllist/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 sllist_tests"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sllist_tests/fast">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/lib/sllist/sllist_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/lib/sllist"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/lib/sllist/../../include"/>
+					<Add directory="/home/deivid/Source/vm/lib/sllist/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 sllist_tests/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/lib/sllist/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cep_avl_static">
+				<Option output="/home/deivid/Source/vm/cep_reader/lib/cep_avl/libcep_avl_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/cep_reader/lib/cep_avl/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 cep_avl_static"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cep_avl_static/fast">
+				<Option output="/home/deivid/Source/vm/cep_reader/lib/cep_avl/libcep_avl_static.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/cep_reader/lib/cep_avl/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 cep_avl_static/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cep_avl_shared">
+				<Option output="/home/deivid/Source/vm/cep_reader/lib/cep_avl/libcep_avl_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/cep_reader/lib/cep_avl/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 cep_avl_shared"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cep_avl_shared/fast">
+				<Option output="/home/deivid/Source/vm/cep_reader/lib/cep_avl/libcep_avl_shared.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/deivid/Source/vm/cep_reader/lib/cep_avl/../../include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 cep_avl_shared/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cep_avl_tests">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/cep_avl_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/cep_reader/lib/cep_avl/../../include"/>
+					<Add directory="/home/deivid/Source/vm/cep_reader/lib/cep_avl/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 cep_avl_tests"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cep_avl_tests/fast">
+				<Option output="/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/cep_avl_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DGTEST_LINKED_AS_SHARED_LIBRARY=1"/>
+					<Add directory="/home/deivid/Source/vm/cep_reader/lib/cep_avl/../../include"/>
+					<Add directory="/home/deivid/Source/vm/cep_reader/lib/cep_avl/GTest::Gtest"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 cep_avl_tests/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/deivid/Source/vm/cmake-build-debug/cep_reader/lib/cep_avl/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/deivid/Source/vm/cep_reader/include/cep_avl.h">
+			<Option target="cep_avl_static"/>
+			<Option target="cep_avl_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/cep_reader/lib/cep_avl/cep_avl.c">
+			<Option target="cep_avl_static"/>
+			<Option target="cep_avl_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/cep_reader/lib/cep_avl/internal.h">
+			<Option target="cep_avl_static"/>
+			<Option target="cep_avl_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/cep_reader/lib/cep_avl/tests/cep_avl_tests.cpp">
+			<Option target="cep_avl_tests"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/include/JSON.h">
+			<Option target="JSON_static"/>
+			<Option target="JSON_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/include/TCPServer.h">
+			<Option target="TCPServer_static"/>
+			<Option target="TCPServer_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/include/avl.h">
+			<Option target="avl_static"/>
+			<Option target="avl_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/include/bst.h">
+			<Option target="bst_static"/>
+			<Option target="bst_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/include/dijkstra.h">
+			<Option target="dijkstra_static"/>
+			<Option target="dijkstra_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/include/hashTable.h">
+			<Option target="hashTable_static"/>
+			<Option target="hashTable_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/include/heap.h">
+			<Option target="heap_static"/>
+			<Option target="heap_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/include/hmac.h">
+			<Option target="hmac_static"/>
+			<Option target="hmac_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/include/log.h">
+			<Option target="log_static"/>
+			<Option target="log_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/include/rwe.h">
+			<Option target="rwe_static"/>
+			<Option target="rwe_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/include/sllist.h">
+			<Option target="sllist_static"/>
+			<Option target="sllist_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/JSON/JSON.c">
+			<Option target="JSON_static"/>
+			<Option target="JSON_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/JSON/tests/JSON_tests.cpp">
+			<Option target="JSON_tests"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/TCPServer/TCPServer.c">
+			<Option target="TCPServer_static"/>
+			<Option target="TCPServer_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/TCPServer/tests/TCPServer_tests.cpp">
+			<Option target="TCPServer_tests"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/avl/avl.c">
+			<Option target="avl_static"/>
+			<Option target="avl_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/avl/internal.h">
+			<Option target="avl_static"/>
+			<Option target="avl_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/avl/tests/avl_tests.cpp">
+			<Option target="avl_tests"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/bst/bst.c">
+			<Option target="bst_static"/>
+			<Option target="bst_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/bst/internal.h">
+			<Option target="bst_static"/>
+			<Option target="bst_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/bst/tests/bst_tests.cpp">
+			<Option target="bst_tests"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/dijkstra/dijkstra.c">
+			<Option target="dijkstra_static"/>
+			<Option target="dijkstra_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/dijkstra/internal.h">
+			<Option target="dijkstra_static"/>
+			<Option target="dijkstra_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/dijkstra/tests/dijkstra_tests.cpp">
+			<Option target="dijkstra_tests"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/hashTable/hashTable.c">
+			<Option target="hashTable_static"/>
+			<Option target="hashTable_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/hashTable/tests/hashTable_tests.cpp">
+			<Option target="hashTable_tests"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/heap/heap.c">
+			<Option target="heap_static"/>
+			<Option target="heap_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/heap/tests/heap_tests.cpp">
+			<Option target="heap_tests"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/hmac/hmac.c">
+			<Option target="hmac_static"/>
+			<Option target="hmac_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/hmac/tests/hmac_tests.cpp">
+			<Option target="hmac_tests"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/log/log.c">
+			<Option target="log_static"/>
+			<Option target="log_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/log/tests/log_tests.cpp">
+			<Option target="log_tests"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/rwe/rwe.c">
+			<Option target="rwe_static"/>
+			<Option target="rwe_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/rwe/tests/rwe_tests.cpp">
+			<Option target="rwe_tests"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/sllist/sllist.c">
+			<Option target="sllist_static"/>
+			<Option target="sllist_shared"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/sllist/tests/sllist_tests.cpp">
+			<Option target="sllist_tests"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/defaults.cmake">
+			<Option virtualFolder="CMake Files\lib\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/JSON/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\JSON\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/TCPServer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\TCPServer\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/avl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\avl\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/bst/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\bst\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/dijkstra/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\dijkstra\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/hashTable/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\hashTable\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/heap/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\heap\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/hmac/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\hmac\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/log/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\log\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/rwe/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\rwe\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/lib/sllist/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\lib\sllist\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/../../../../usr/lib/cmake/GTest/GTestConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\GTest\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/../../../../usr/lib/cmake/GTest/GTestConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\GTest\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/../../../../usr/lib/cmake/GTest/GTestTargets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\GTest\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/../../../../usr/lib/cmake/GTest/GTestTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib\cmake\GTest\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/cep_reader/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cep_reader\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/cep_reader/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cep_reader\lib\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/cep_reader/lib/defaults.cmake">
+			<Option virtualFolder="CMake Files\cep_reader\lib\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/cep_reader/lib/cep_avl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cep_reader\lib\cep_avl\"/>
+		</Unit>
+		<Unit filename="/home/deivid/Source/vm/sorter_comp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\sorter_comp\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

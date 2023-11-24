@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g -shared -Wl,-soname,libavl_shared.so -o /home/deivid/Source/vm/lib/avl/libavl_shared.so CMakeFiles/avl_shared.dir/avl.c.o 

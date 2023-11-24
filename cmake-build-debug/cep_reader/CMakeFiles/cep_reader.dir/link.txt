@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cep_reader.dir/cep_reader.c.o -o /home/deivid/Source/vm/cep_reader/bin/cep_reader  -Wl,-rpath,/home/deivid/Source/vm/cep_reader/lib/cep_avl /home/deivid/Source/vm/cep_reader/lib/cep_avl/libcep_avl_shared.so 

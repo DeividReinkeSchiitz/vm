@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/deivid/Source/vm/cep_reader/lib/cep_avl/libcep_avl_static.a CMakeFiles/cep_avl_static.dir/cep_avl.c.o
+/usr/bin/ranlib /home/deivid/Source/vm/cep_reader/lib/cep_avl/libcep_avl_static.a

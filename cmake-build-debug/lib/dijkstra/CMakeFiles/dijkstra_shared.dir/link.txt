@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g -shared -Wl,-soname,libdijkstra_shared.so -o /home/deivid/Source/vm/lib/dijkstra/libdijkstra_shared.so CMakeFiles/dijkstra_shared.dir/dijkstra.c.o 

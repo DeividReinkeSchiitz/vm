@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/bst_tests.dir/tests/bst_tests.cpp.o -o bst_tests  -Wl,-rpath,/home/deivid/Source/vm/lib/bst /home/deivid/Source/vm/lib/bst/libbst_shared.so /home/deivid/Source/vm/lib/bst/libbst_static.a /usr/lib/libgtest_main.so.1.14.0 /usr/lib/libgtest.so.1.14.0 

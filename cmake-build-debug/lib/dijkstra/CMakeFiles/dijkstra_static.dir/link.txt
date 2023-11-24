@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/deivid/Source/vm/lib/dijkstra/libdijkstra_static.a CMakeFiles/dijkstra_static.dir/dijkstra.c.o
+/usr/bin/ranlib /home/deivid/Source/vm/lib/dijkstra/libdijkstra_static.a

@@ -1,0 +1,45 @@
+/home/deivid/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/deivid/Source/vm -B /home/deivid/Source/vm/cmake-build-debug
+-- Starting to build libraries...
+-- JSON: 
+--   - static library: JSON_static
+--   - shared library: JSON_shared
+-- TCPServer: 
+--   - static library: TCPServer_static
+--   - shared library: TCPServer_shared
+-- avl: 
+--   - static library: avl_static
+--   - shared library: avl_shared
+-- bst: 
+--   - static library: bst_static
+--   - shared library: bst_shared
+-- dijkstra: 
+--   - static library: dijkstra_static
+--   - shared library: dijkstra_shared
+-- hashTable: 
+--   - static library: hashTable_static
+--   - shared library: hashTable_shared
+-- heap: 
+--   - static library: heap_static
+--   - shared library: heap_shared
+-- hmac: 
+--   - static library: hmac_static
+--   - shared library: hmac_shared
+-- log: 
+--   - static library: log_static
+--   - shared library: log_shared
+-- rwe: 
+--   - static library: rwe_static
+--   - shared library: rwe_shared
+-- sllist: 
+--   - static library: sllist_static
+--   - shared library: sllist_shared
+-- Starting to build executables...
+-- Building order_comp with /home/deivid/Source/vm/sorter_comp/../lib/avl/libavl_shared.so;/home/deivid/Source/vm/sorter_comp/../lib/heap/libheap_shared.so;/home/deivid/Source/vm/sorter_comp/../lib/bst/libbst_shared.so
+-- Starting to build libraries...
+-- cep_avl: 
+--   - static library: cep_avl_static
+--   - shared library: cep_avl_shared
+-- Building cep_reader with /home/deivid/Source/vm/cep_reader/lib/cep_avl/libcep_avl_shared.so
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/deivid/Source/vm/cmake-build-debug

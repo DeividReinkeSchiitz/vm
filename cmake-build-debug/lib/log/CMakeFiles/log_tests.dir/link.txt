@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/log_tests.dir/tests/log_tests.cpp.o -o log_tests  -Wl,-rpath,/home/deivid/Source/vm/lib/log /home/deivid/Source/vm/lib/log/liblog_shared.so /home/deivid/Source/vm/lib/log/liblog_static.a /usr/lib/libgtest_main.so.1.14.0 /usr/lib/libgtest.so.1.14.0 

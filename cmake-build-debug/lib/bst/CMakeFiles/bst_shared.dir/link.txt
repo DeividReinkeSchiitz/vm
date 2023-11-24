@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g -shared -Wl,-soname,libbst_shared.so -o /home/deivid/Source/vm/lib/bst/libbst_shared.so CMakeFiles/bst_shared.dir/bst.c.o 

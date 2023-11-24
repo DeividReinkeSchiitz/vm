@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/deivid/Source/vm/lib/bst/libbst_static.a CMakeFiles/bst_static.dir/bst.c.o
+/usr/bin/ranlib /home/deivid/Source/vm/lib/bst/libbst_static.a

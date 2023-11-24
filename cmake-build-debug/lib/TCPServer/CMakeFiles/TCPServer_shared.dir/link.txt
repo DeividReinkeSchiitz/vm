@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g -shared -Wl,-soname,libTCPServer_shared.so -o /home/deivid/Source/vm/lib/TCPServer/libTCPServer_shared.so CMakeFiles/TCPServer_shared.dir/TCPServer.c.o 

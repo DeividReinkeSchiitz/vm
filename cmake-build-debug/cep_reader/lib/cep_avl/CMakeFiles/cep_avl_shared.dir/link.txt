@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g -shared -Wl,-soname,libcep_avl_shared.so -o /home/deivid/Source/vm/cep_reader/lib/cep_avl/libcep_avl_shared.so CMakeFiles/cep_avl_shared.dir/cep_avl.c.o 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/deivid/Source/vm/lib/JSON/libJSON_static.a CMakeFiles/JSON_static.dir/JSON.c.o
+/usr/bin/ranlib /home/deivid/Source/vm/lib/JSON/libJSON_static.a

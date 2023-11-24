@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/deivid/Source/vm/lib/avl/libavl_static.a CMakeFiles/avl_static.dir/avl.c.o
+/usr/bin/ranlib /home/deivid/Source/vm/lib/avl/libavl_static.a

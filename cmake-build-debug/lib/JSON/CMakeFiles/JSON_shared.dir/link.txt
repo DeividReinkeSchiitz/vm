@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g -shared -Wl,-soname,libJSON_shared.so -o /home/deivid/Source/vm/lib/JSON/libJSON_shared.so CMakeFiles/JSON_shared.dir/JSON.c.o 

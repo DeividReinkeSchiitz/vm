@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g -shared -Wl,-soname,libhmac_shared.so -o /home/deivid/Source/vm/lib/hmac/libhmac_shared.so CMakeFiles/hmac_shared.dir/hmac.c.o  /usr/lib/libssl.so /usr/lib/libcrypto.so 

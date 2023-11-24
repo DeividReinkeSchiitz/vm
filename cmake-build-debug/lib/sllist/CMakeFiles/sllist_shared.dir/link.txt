@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g -shared -Wl,-soname,libsllist_shared.so -o /home/deivid/Source/vm/lib/sllist/libsllist_shared.so CMakeFiles/sllist_shared.dir/sllist.c.o 

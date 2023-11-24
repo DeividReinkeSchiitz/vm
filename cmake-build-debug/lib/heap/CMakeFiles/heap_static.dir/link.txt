@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/deivid/Source/vm/lib/heap/libheap_static.a CMakeFiles/heap_static.dir/heap.c.o
+/usr/bin/ranlib /home/deivid/Source/vm/lib/heap/libheap_static.a

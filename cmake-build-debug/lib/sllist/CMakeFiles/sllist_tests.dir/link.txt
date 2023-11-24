@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/sllist_tests.dir/tests/sllist_tests.cpp.o -o sllist_tests  -Wl,-rpath,/home/deivid/Source/vm/lib/sllist /home/deivid/Source/vm/lib/sllist/libsllist_shared.so /home/deivid/Source/vm/lib/sllist/libsllist_static.a /usr/lib/libgtest_main.so.1.14.0 /home/deivid/Source/vm/lib/sllist/../log/liblog_static.a /usr/lib/libgtest.so.1.14.0 

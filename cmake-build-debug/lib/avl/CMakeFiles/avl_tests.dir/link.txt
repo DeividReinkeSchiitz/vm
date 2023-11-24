@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/avl_tests.dir/tests/avl_tests.cpp.o -o avl_tests  -Wl,-rpath,/home/deivid/Source/vm/lib/avl /home/deivid/Source/vm/lib/avl/libavl_shared.so /home/deivid/Source/vm/lib/avl/libavl_static.a /usr/lib/libgtest_main.so.1.14.0 /usr/lib/libgtest.so.1.14.0 

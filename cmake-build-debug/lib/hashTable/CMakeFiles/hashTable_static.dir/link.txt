@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/deivid/Source/vm/lib/hashTable/libhashTable_static.a CMakeFiles/hashTable_static.dir/hashTable.c.o
+/usr/bin/ranlib /home/deivid/Source/vm/lib/hashTable/libhashTable_static.a

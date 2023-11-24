@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g -shared -Wl,-soname,libheap_shared.so -o /home/deivid/Source/vm/lib/heap/libheap_shared.so CMakeFiles/heap_shared.dir/heap.c.o 

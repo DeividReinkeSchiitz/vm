@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g -shared -Wl,-soname,libhashTable_shared.so -o /home/deivid/Source/vm/lib/hashTable/libhashTable_shared.so CMakeFiles/hashTable_shared.dir/hashTable.c.o 
