@@ -2,10 +2,10 @@
 // Created by deivid on 1/30/23.
 //
 
-extern "C"
-{
-    //#include "log.h"
-}
+//extern "C"
+//{
+//    //#include "log.h"
+//}
 
 #include <gtest/gtest.h>
 #include <iostream>

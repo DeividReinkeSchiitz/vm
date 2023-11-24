@@ -28,12 +28,6 @@ cmake --build ../ && make
 valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./Default
 `
 
-### Packages
-
-`
-sudo apt-get install g++ cmake clang-format valgrind libssl-dev
-`
-
 ### Executables Default Settings
 
 All executables must respect this following structures:

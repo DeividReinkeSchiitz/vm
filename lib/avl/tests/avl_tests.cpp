@@ -7,11 +7,10 @@ extern "C"
 #include "avl.h"
 }
 
-
 #include <gtest/gtest.h>
 #include <iostream>
 
-TEST(LogTest, LogTest)
+TEST(LogTest, sort)
 {
     int arr[]     = {10, 5, 15, 3, 7, 12, 9};
     int arr_exp[] = {3, 5, 7, 9, 10, 12, 15};

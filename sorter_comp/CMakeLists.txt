@@ -4,12 +4,15 @@ set(BINARY order_comp)
 
 project(${BINARY} C)
 
+# Include the header files
 set(EXTERNAL_INCLUDE_FOLDER ${CMAKE_CURRENT_SOURCE_DIR}/../include)
 set(HOME_INCLUDE_FOLDER ${CMAKE_CURRENT_SOURCE_DIR}/include)
-
 include_directories(${EXTERNAL_INCLUDE_FOLDER} ${HOME_INCLUDE_FOLDER})
 
-set(SOURCE_FILES src/${BINARY}.c)
+# Include the .c files
+# all file inside the src folder will be included
+file(GLOB_RECURSE SOURCE_FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/*.c ${CMAKE_CURRENT_SOURCE_DIR}/*.c)
+set(SOURCE_FILES ${SOURCE_FILES} )
 
 # if this option is enabled, the project will be built with the static library
 option(RELEASE "Build shared libraries" OFF)

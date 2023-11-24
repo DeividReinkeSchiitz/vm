@@ -35,7 +35,7 @@ int avl_height(struct AVL_Node *node)
         return node->height;
 }
 
-int avl_max(int a, int b)
+int cavl_max(int a, int b)
 {
     return (a > b) ? a : b;
 }
@@ -50,8 +50,8 @@ struct AVL_Node *avl_rightRotate(struct AVL_Node *y)
     y->left             = T2;
 
     // Update heights.
-    y->height           = avl_max(avl_height(y->left), avl_height(y->right)) + 1;
-    x->height           = avl_max(avl_height(x->left), avl_height(x->right)) + 1;
+    y->height           = cavl_max(avl_height(y->left), avl_height(y->right)) + 1;
+    x->height           = cavl_max(avl_height(x->left), avl_height(x->right)) + 1;
 
     // Return new root.
     return x;
@@ -67,8 +67,8 @@ struct AVL_Node *avl_leftRotate(struct AVL_Node *x)
     x->right            = T2;
 
     // Update heights.
-    x->height           = avl_max(avl_height(x->left), avl_height(x->right)) + 1;
-    y->height           = avl_max(avl_height(y->left), avl_height(y->right)) + 1;
+    x->height           = cavl_max(avl_height(x->left), avl_height(x->right)) + 1;
+    y->height           = cavl_max(avl_height(y->left), avl_height(y->right)) + 1;
 
     // Return new root.
     return y;
@@ -102,7 +102,7 @@ struct AVL_Node *avl_insert(struct AVL_Node *root, int key)
     }
 
     // Update avl_height of the current node.
-    root->height = avl_max(avl_height(root->left), avl_height(root->right)) + 1;
+    root->height = cavl_max(avl_height(root->left), avl_height(root->right)) + 1;
 
     // Balance the current node.
     int balance  = avl_balanceFactor(root);
