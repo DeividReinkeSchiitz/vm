@@ -1,7 +1,3 @@
-#### OBS
-
-if you change the machine, change the LOG_FOLDER inside the log.c file
-
 ### INSTALATION
 
 `
@@ -60,3 +56,6 @@ All libraries must respect this following project structures (based on unix stan
     * Shared libname_shared.so file in /lib/libname/libname_shared.so.
 
 You can read more about this in the [CMakeLists.txt](./lib/README.md) file.
+
+
+_*obs*_: when change the machine, change default LOG_FOLDER inside the log.c file
